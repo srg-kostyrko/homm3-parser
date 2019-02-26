@@ -1,0 +1,40 @@
+{
+  "name": "homm3-parser",
+  "version": "0.8.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@pika/pack": "^0.3.3",
+    "@pika/plugin-build-node": "^0.3.12",
+    "@pika/plugin-build-web": "^0.3.12",
+    "@pika/plugin-ts-standard-pkg": "^0.3.12",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-problems": "^2.0.0",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3333"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  }
+}
