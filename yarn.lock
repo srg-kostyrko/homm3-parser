@@ -838,6 +838,11 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
+binary-markup@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/binary-markup/-/binary-markup-0.8.3.tgz#493ad840e507d3c6ed809a418055a27d64356202"
+  integrity sha512-fOVlt2Lbd2n2ngkk5gu5cfiEDaCbvhMYTHDXvLcHA0bYIvEtd0tocLP4Oirtuis3n4PaJVTSTHIvu0zmg0tBCg==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
