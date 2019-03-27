@@ -2,7 +2,7 @@ import { byte, uint8, uint32, when, struct, skip, ctx, array, flag, enums } from
 import { isRoE, isNotRoE, isSoD, hero, hommString } from './common.bml'
 import { Hero } from './constants/hero'
 import { behaviorEnum, Behavior } from './constants'
-import { FlaggedProp } from '../../../pkg/dist-types/helpers/types'
+import { FlaggedProp } from '../../helpers/types'
 
 const mainTown = struct(
   when(isNotRoE, uint8)`create_hero`,
