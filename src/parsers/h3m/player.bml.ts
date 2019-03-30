@@ -36,14 +36,14 @@ const additionalInfo = struct(
   array(additionalHeroInfo, ctx`heroesCount`)`heroes`
 )
 
-interface StartingHero {
+export interface StartingHero {
   is_random: boolean
   hero: Hero
   face?: number
   name?: string
 }
 
-type MainTown = FlaggedProp<
+export type MainTown = FlaggedProp<
   'hasMainTown',
   'mainTown',
   {
@@ -55,7 +55,7 @@ type MainTown = FlaggedProp<
   }
 >
 
-interface PlayerBase {
+export interface PlayerBase {
   canBeHuman: boolean
   canBeComputer: boolean
   behavior: Behavior

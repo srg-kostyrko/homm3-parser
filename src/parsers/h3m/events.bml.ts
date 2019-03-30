@@ -2,7 +2,7 @@ import { uint8, uint16, uint32, array, struct, when, ctx, skip, flag } from 'bin
 import { isSoD, hommString, resources } from './common.bml'
 import { Resource } from './constants/resource'
 
-interface Event {
+export interface Event {
   name: string
   message: string
   resources: Resource[]

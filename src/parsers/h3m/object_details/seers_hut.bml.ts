@@ -29,7 +29,7 @@ const rewardBranches = {
   [QuestReward.Creature]: creatureSlot
 }
 
-type SeersHutQuestReward =
+export type SeersHutQuestReward =
   | {
       rewardType: QuestReward.NONE
     }

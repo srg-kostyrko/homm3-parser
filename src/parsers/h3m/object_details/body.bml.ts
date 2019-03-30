@@ -50,7 +50,7 @@ import { Player } from '../player.bml'
 import { Hero } from '../constants/hero'
 import { formationEnum, Formation } from '../constants/formation'
 
-type Guardians = {
+export type Guardians = {
   message: string
 } & FlaggedProp<'hasCreatures', 'creatures', Army>
 
@@ -61,7 +61,7 @@ const guardians = struct(
   skip(4)
 )
 
-interface Contents {
+export interface Contents {
   experience: number
   spellPoints: number
   morale: number
@@ -96,9 +96,9 @@ const contents = struct(
   skip(8)
 )
 
-type WithGuardians = FlaggedProp<'hasGuardians', 'guardians', Guardians>
+export type WithGuardians = FlaggedProp<'hasGuardians', 'guardians', Guardians>
 
-type PandoraBox = WithGuardians & {
+export type PandoraBox = WithGuardians & {
   contents: Contents
 }
 
@@ -108,12 +108,12 @@ const pandoraBox = struct(
   contents`contents`
 )
 
-interface MessageBearer {
+export interface MessageBearer {
   message: string
 }
 const messageBearer = struct(hommString`message`, skip(4))
 
-interface Garrison {
+export interface Garrison {
   owner: Player
   creatures: Army
   removableUnits: number
@@ -125,7 +125,7 @@ const garrison = struct(
   skip(8)
 )
 
-type Event = WithGuardians & {
+export type Event = WithGuardians & {
   contents: Contents
   appliesToPlayers: boolean
   appliesToComputer: boolean
@@ -141,16 +141,16 @@ const event = struct(
   skip(4)
 )
 
-interface Grail {
+export interface Grail {
   allowableRadius: number
 }
 const grail = struct(uint32`allowableRadius`)
-interface Flagged {
+export interface Flagged {
   owner: Player
 }
 const flagged = struct(uint32`owner`)
 
-interface RandomDwelling {
+export interface RandomDwelling {
   owner: Player
   castle?: {
     castleAbsodId: number
@@ -173,7 +173,7 @@ const randomDwelling = struct(
   when(ctx`type`.neq(MetaType.RandomDwellingLevel), struct(uint8`minLevel`, uint8`maxLevel`))`level`
 )
 
-type HeroData = {
+export type HeroData = {
   absod_id?: number
   owner: Player
   hero: Hero
@@ -241,19 +241,19 @@ const heroData = struct(
   skip(16)
 )
 
-interface Treasure {
+export interface Treasure {
   resources: Resources
   artifact: Artifact
 }
 const treasure = struct(resources`resources`, artifact`artifact`)
 
-interface MessageAndTreasure {
+export interface MessageAndTreasure {
   message: string
   treasure: Treasure
 }
 const messageAndTreasure = struct(hommString`message`, treasure`treasure`)
 
-type Monster = {
+export type Monster = {
   absodId?: number
   quantity: number
   disposition: Disposition
@@ -272,18 +272,18 @@ const monster = struct(
   skip(2)
 )
 
-type ArtifactObject = FlaggedProp<'hasGuardians', 'guardians', Guardians>
+export type ArtifactObject = FlaggedProp<'hasGuardians', 'guardians', Guardians>
 const artifactObject = struct(
   //
   uint8`hasGuardians`,
   when(ctx`hasGuardians`, guardians)`guardians`
 )
-interface Shrine {
+export interface Shrine {
   spell: Spell
 }
 const shrine = struct(spell`spell`)
 
-type SpellScroll = ArtifactObject & {
+export type SpellScroll = ArtifactObject & {
   spell: Spell
 }
 const spellScroll = struct(
@@ -292,7 +292,7 @@ const spellScroll = struct(
   spell`spell`
 )
 
-type ResourceData = ArtifactObject & {
+export type ResourceData = ArtifactObject & {
   quantity: number
 }
 const resource = struct(
@@ -302,18 +302,18 @@ const resource = struct(
   skip(4)
 )
 
-interface WitchHut {
+export interface WitchHut {
   potentialSkills: number[]
 }
 const witchHut = struct(bytes(4)`potentialSkills`)
 
-interface Scholar {
+export interface Scholar {
   rewardType: number
   rewardValue: number
 }
 const scholar = struct(uint8`rewardType`, uint8`rewardValue`, skip(6))
 
-interface HeroPlaceholder {
+export interface HeroPlaceholder {
   owner: Player
   type: number
   powerRating: number

@@ -16,7 +16,7 @@ import { QuestType, questEnum } from '../constants/quest'
 import { Hero } from '../constants/hero'
 import { Player } from '../player.bml'
 
-type Objective =
+export type Objective =
   | number
   | PrimarySkills
   | number

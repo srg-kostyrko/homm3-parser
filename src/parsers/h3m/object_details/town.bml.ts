@@ -21,7 +21,7 @@ import { Player } from '../player.bml'
 import { FlaggedProp } from '../../../helpers/types'
 import { Formation } from '../constants/formation'
 
-interface TownEvent {
+export interface TownEvent {
   name: string
   message: string
   resources: Resources
@@ -105,7 +105,7 @@ const buildingsMask = sequence(
   })
 )
 
-interface BuildingsMaskType {
+export interface BuildingsMaskType {
   [key: string]: boolean
 }
 
@@ -132,7 +132,7 @@ class Buildings extends Adapter<BuildingsMaskType[], BuildingsMaskType> {
 
 const buildings = createTag(Buildings)
 
-type BuildingsType =
+export type BuildingsType =
   | {
       buildingsCustomized: false
     }

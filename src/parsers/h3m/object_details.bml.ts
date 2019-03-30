@@ -15,7 +15,7 @@ const type = computed(context => {
   return getMetaType(oa.objectType)
 })
 
-interface Entry {
+export interface MapObject {
   x: number
   y: number
   z: number
@@ -39,7 +39,7 @@ const entry = struct(
 
 export interface ObjectDetails {
   count: number
-  entries: Entry[]
+  entries: MapObject[]
 }
 
 export const objectDetails = struct(

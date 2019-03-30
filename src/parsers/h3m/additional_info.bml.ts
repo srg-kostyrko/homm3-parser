@@ -33,7 +33,7 @@ import { winConditionsBranches, WinConditionData } from './additional_info/win_c
 import { Hero } from './constants/hero'
 import { FlaggedProp } from '../../helpers/types'
 
-interface Rumor {
+export interface Rumor {
   name: string
   desciption: string
 }
@@ -43,7 +43,7 @@ const rumor = struct(
   hommString`desciption`
 )
 
-interface CustomHero {
+export interface CustomHero {
   hero: Hero
   face: number
   name: string
@@ -57,7 +57,7 @@ const customHero = struct(
   uint8`allowed_players`
 )
 
-interface SecondarySkills {
+export interface SecondarySkills {
   count: number
   entries: SecondarySkill[]
 }
@@ -74,7 +74,7 @@ type WithBiography = FlaggedProp<'hasBiography', 'biography', string>
 type WithSpells = FlaggedProp<'hasSpells', 'spells', number[]>
 type WithPrimarySkills = FlaggedProp<'hasPrimarySkills', 'primarySkills', PrimarySkills>
 
-type HeroData = {
+export type HeroData = {
   gender: Gender
 } & WithExperience &
   WithSecondarySkills &
@@ -99,7 +99,7 @@ const heroSetting = struct(
   when(ctx`hasPrimarySkills`, primarySkills)`primarySkills`
 )
 
-type HeroSettings = FlaggedProp<'hasSettings', 'settings', HeroData>
+export type HeroSettings = FlaggedProp<'hasSettings', 'settings', HeroData>
 
 const heroSettings = struct(
   //
