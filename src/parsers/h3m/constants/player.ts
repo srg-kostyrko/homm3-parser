@@ -1,13 +1,13 @@
 export enum Player {
-  Red,
-  Blue,
-  Tan,
-  Green,
-  Orange,
-  Purple,
-  Teal,
-  Pink,
-  Neutral
+  Red = 'Red',
+  Blue = 'Blue',
+  Tan = 'Tan',
+  Green = 'Green',
+  Orange = 'Orange',
+  Purple = 'Purple',
+  Teal = 'Teal',
+  Pink = 'Pink',
+  Neutral = 'Neutral',
 }
 
 export const playerEnum = {
@@ -19,5 +19,5 @@ export const playerEnum = {
   [Player.Purple]: 5,
   [Player.Teal]: 6,
   [Player.Pink]: 7,
-  [Player.Neutral]: 255
+  [Player.Neutral]: 255,
 }

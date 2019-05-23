@@ -5,24 +5,24 @@ import { behaviorEnum, Behavior } from './constants'
 import { FlaggedProp } from '../../helpers/types'
 
 const mainTown = struct(
-  when(isNotRoE, uint8)`create_hero`,
+  when(isNotRoE, byte)`createHero`,
   when(isNotRoE, byte)`type`,
-  uint8`x`,
-  uint8`y`,
-  uint8`z`
+  byte`x`,
+  byte`y`,
+  byte`z`
 )
 
 const startingHeroRoE = struct(
-  flag`is_random`,
+  flag`isRandom`,
   hero`hero`,
-  when(ctx<Hero>`hero`.neq(Hero.NONE), uint8)`face`,
+  when(ctx<Hero>`hero`.neq(Hero.NONE), byte)`face`,
   when(ctx<Hero>`hero`.neq(Hero.NONE), hommString)`name`
 )
 const startingHeroAbSoD = struct(
   //
-  flag`is_random`,
+  flag`isRandom`,
   hero`hero`,
-  uint8`face`,
+  byte`face`,
   hommString`name`
 )
 
@@ -37,7 +37,7 @@ const additionalInfo = struct(
 )
 
 export interface StartingHero {
-  is_random: boolean
+  isRandom: boolean
   hero: Hero
   face?: number
   name?: string
@@ -47,7 +47,7 @@ export type MainTown = FlaggedProp<
   'hasMainTown',
   'mainTown',
   {
-    create_hero: number
+    createHero: number
     type: number
     x: number
     y: number

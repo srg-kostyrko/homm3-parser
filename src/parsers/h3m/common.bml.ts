@@ -1,7 +1,10 @@
 import {
   byte,
   uint8,
+  int8,
+  int16,
   uint32,
+  int32,
   when,
   struct,
   uint16,
@@ -9,14 +12,19 @@ import {
   pascalString,
   enums,
   ctx,
-  Context
+  Context,
 } from 'binary-markup'
 
 import { MapFormat } from './constants'
 import { artifactEnum, Artifact } from './constants/artifact'
 import { creatureEnum, Creature } from './constants/creature'
 import { heroEnum } from './constants/hero'
-import { skillEnum, Skill } from './constants/skill'
+import {
+  secondarySkillEnum,
+  SecondarySkillType,
+  secondarySkillMasteryEnum,
+  SecondarySkillMastery,
+} from './constants/skill'
 import { spellEnum } from './constants/spell'
 import { resourceEnum } from './constants/resource'
 import { playerEnum } from './constants/player'
@@ -28,33 +36,36 @@ export const isNotRoE = (context: Context): boolean => context.get('format') !==
 export const hommString = pascalString(uint32)
 
 export interface PrimarySkills {
-  attack_skill: number
-  defense_skill: number
-  spell_power: number
+  attack: number
+  defense: number
+  spellPower: number
   knowledge: number
 }
-export const primarySkills = struct(
-  uint8`attack_skill`,
-  uint8`defense_skill`,
-  uint8`spell_power`,
-  uint8`knowledge`
+export const primarySkills = struct<PrimarySkills>(
+  uint8`attack`,
+  uint8`defense`,
+  uint8`spellPower`,
+  uint8`knowledge`,
 )
 
-export const skill = enums(byte, skillEnum)
+export const skill = enums(byte, secondarySkillEnum)
 
 export interface SecondarySkill {
-  type: Skill
-  level: number
+  type: SecondarySkillType
+  level: SecondarySkillMastery
 }
-export const secondarySkill = struct(skill`type`, uint8`level`)
+export const secondarySkill = struct<SecondarySkill>(
+  skill`type`,
+  enums(uint8, secondarySkillMasteryEnum)`level`,
+)
 export const experience = uint32
 export const heroType = uint8
 export const artifactType = when(isRoE, uint8, uint16)
-export const creatureType = when(isRoE, uint8, uint16)
+export const creatureType = when(isRoE, int8, int16)
 export const resourceType = uint8
 export const spellType = uint8
 export const absodId = uint32
-export const playerFlag = uint8
+export const playerFlag = enums(uint8, playerEnum)
 
 export const artifact = enums(artifactType, artifactEnum)
 export const creature = enums(creatureType, creatureEnum)
@@ -66,7 +77,7 @@ export interface CreatureSlot {
   type: Creature
   quantity: number
 }
-export const creatureSlot = struct(creature`type`, uint16`quantity`)
+export const creatureSlot = struct<CreatureSlot>(creature`type`, uint16`quantity`)
 
 export type Army = [
   CreatureSlot,
@@ -80,16 +91,16 @@ export type Army = [
 export const army = array(creatureSlot, 7)
 
 export type Resources = number[]
-export const resources = array(resourceType, 7)
+export const resources = array(int32, 7)
 
 export interface WornArtifacts {
   headwear: Artifact
   shoulders: Artifact
-  right_hand: Artifact
-  left_hand: Artifact
+  rightHand: Artifact
+  leftHand: Artifact
   torso: Artifact
-  right_ring: Artifact
-  left_ring: Artifact
+  rightRing: Artifact
+  leftRing: Artifact
   feet: Artifact
   misc1: Artifact
   misc2: Artifact
@@ -103,14 +114,14 @@ export interface WornArtifacts {
   misc5: Artifact
 }
 
-export const wornArtifacts = struct(
+export const wornArtifacts = struct<WornArtifacts>(
   artifact`headwear`,
   artifact`shoulders`,
-  artifact`right_hand`,
-  artifact`left_hand`,
+  artifact`rightHand`,
+  artifact`leftHand`,
   artifact`torso`,
-  artifact`right_ring`,
-  artifact`left_ring`,
+  artifact`rightRing`,
+  artifact`leftRing`,
   artifact`feet`,
   artifact`misc1`,
   artifact`misc2`,
@@ -120,9 +131,9 @@ export const wornArtifacts = struct(
   artifact`device2`,
   artifact`device3`,
   artifact`device4`,
-  when(isSoD, uint16)`unknown`,
+  when(isSoD, uint16),
   artifact`spellbook`,
-  artifact`misc5`
+  artifact`misc5`,
 )
 
 export interface Backpack {
@@ -130,12 +141,16 @@ export interface Backpack {
   artifacts: Artifact
 }
 
-export const backpack = struct(uint16`count`, array(artifact, ctx`count`)`artifacts`)
+export const backpack = struct<Backpack>(
+  //
+  uint16`count`,
+  array(artifact, ctx`count`)`artifacts`,
+)
 
 export interface Artifacts {
   worn: WornArtifacts
   backpack: Backpack
 }
-export const artifacts = struct(wornArtifacts`worn`, backpack`backpack`)
+export const artifacts = struct<Artifacts>(wornArtifacts`worn`, backpack`backpack`)
 
 export const owner = enums(byte, playerEnum)

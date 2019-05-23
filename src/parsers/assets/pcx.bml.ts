@@ -1,8 +1,21 @@
 import { uint32, bytes, struct, when, array, ctx, greedyArray, endian, Endian } from 'binary-markup'
 
-const rgb = bytes(3)
+const bgr = bytes(3)
 
-export const pcxFile = struct(
+type BGR = [number, number, number]
+
+export interface PcxFile {
+  size: number
+  width: number
+  height: number
+  with_palette?: {
+    pixels: number[]
+    palette: BGR[]
+  }
+  bgr?: BGR[]
+}
+
+export const pcxFile = struct<PcxFile>(
   endian(Endian.LE),
   uint32`size`,
   uint32`width`,
@@ -12,13 +25,13 @@ export const pcxFile = struct(
     struct(
       //
       bytes(ctx`size`)`pixels`,
-      array(rgb, 256)`palette`
-    )
+      array(bgr, 256)`palette`,
+    ),
   )`with_palette`,
   when(
     //
     context =>
       context.get('size') === context.get<number>('width') * context.get<number>('height') * 3,
-    greedyArray(rgb)
-  )`rgb`
+    greedyArray(bgr),
+  )`bgr`,
 )

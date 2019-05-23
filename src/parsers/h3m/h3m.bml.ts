@@ -6,10 +6,10 @@ import { uint32, enums, struct, array, endian, Endian } from 'binary-markup'
 import { formatEnum, H3M_MAX_PLAYERS, MapFormat } from './constants'
 import { info, Info } from './info.bml'
 import { Player, player } from './player.bml'
-import { additionalInfo, AdditionalInfo } from './additional_info.bml'
+import { additionalInfo, AdditionalInfo } from './additionalInfo.bml'
 import { tile, Tile, calculateTiles } from './tiles.bml'
-import { objectAttributes, ObjectAttributes } from './object_attributes.bml'
-import { objectDetails, ObjectDetails } from './object_details.bml'
+import { objectAttributes, ObjectAttributes } from './objectAttributes.bml'
+import { objectDetails, ObjectDetails } from './objectDetails.bml'
 import { events, Events } from './events.bml'
 
 export interface H3MFile {
@@ -32,5 +32,5 @@ export const h3mFile = struct<H3MFile>(
   array(tile, calculateTiles)`tiles`,
   objectAttributes`objectAttributes`,
   objectDetails`objectDetails`,
-  events`events`
+  events`events`,
 )

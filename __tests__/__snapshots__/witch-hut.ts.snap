@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`witch hut should parse witch hut 1`] = `
+Array [
+  Object {
+    "skills": Array [
+      "AirMagic",
+    ],
+    "x": 2,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Archery",
+    ],
+    "x": 5,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Armorer",
+    ],
+    "x": 8,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Artillery",
+    ],
+    "x": 11,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Ballistics",
+    ],
+    "x": 14,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Diplomacy",
+    ],
+    "x": 17,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "EagleEye",
+    ],
+    "x": 20,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "EarthMagic",
+    ],
+    "x": 23,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Estates",
+    ],
+    "x": 26,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "FireMagic",
+    ],
+    "x": 29,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "FirstAid",
+    ],
+    "x": 32,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Intelligence",
+    ],
+    "x": 35,
+    "y": 2,
+  },
+  Object {
+    "skills": Array [
+      "Leadership",
+    ],
+    "x": 2,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Learning",
+    ],
+    "x": 5,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Logistics",
+    ],
+    "x": 8,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Luck",
+    ],
+    "x": 11,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Mysticism",
+    ],
+    "x": 14,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Navigation",
+    ],
+    "x": 17,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Necromancy",
+    ],
+    "x": 20,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Offense",
+    ],
+    "x": 23,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Pathfinding",
+    ],
+    "x": 26,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Resistance",
+    ],
+    "x": 29,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Scholar",
+    ],
+    "x": 32,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Scouting",
+    ],
+    "x": 35,
+    "y": 5,
+  },
+  Object {
+    "skills": Array [
+      "Sorcery",
+    ],
+    "x": 2,
+    "y": 8,
+  },
+  Object {
+    "skills": Array [
+      "Tactics",
+    ],
+    "x": 5,
+    "y": 8,
+  },
+  Object {
+    "skills": Array [
+      "AirMagic",
+      "WaterMagic",
+    ],
+    "x": 8,
+    "y": 8,
+  },
+  Object {
+    "skills": Array [
+      "Wisdom",
+      "AirMagic",
+    ],
+    "x": 11,
+    "y": 8,
+  },
+]
+`;

@@ -1,15 +1,15 @@
 export enum WinCondition {
-  AcquireArtifact,
-  AccumulateCreatures,
-  AccumulateResources,
-  UpgradeTown,
-  BuildGrail,
-  DefeatHero,
-  CaptureTown,
-  DefeatMonster,
-  FlagDwellings,
-  FlagMines,
-  TransportArtifact
+  AcquireArtifact = 'AcquireArtifact',
+  AccumulateCreatures = 'AccumulateCreatures',
+  AccumulateResources = 'AccumulateResources',
+  UpgradeTown = 'UpgradeTown',
+  BuildGrail = 'BuildGrail',
+  DefeatHero = 'DefeatHero',
+  CaptureTown = 'CaptureTown',
+  DefeatMonster = 'DefeatMonster',
+  FlagDwellings = 'FlagDwellings',
+  FlagMines = 'FlagMines',
+  TransportArtifact = 'TransportArtifact',
 }
 
 export const winConditionsEnum = {
@@ -23,5 +23,5 @@ export const winConditionsEnum = {
   [WinCondition.DefeatMonster]: 0x07,
   [WinCondition.FlagDwellings]: 0x08,
   [WinCondition.FlagMines]: 0x09,
-  [WinCondition.TransportArtifact]: 0x0a
+  [WinCondition.TransportArtifact]: 0x0a,
 }

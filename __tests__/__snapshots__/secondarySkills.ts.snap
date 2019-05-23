@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`secondary scills should parse secondary skills 1`] = `
+Array [
+  Array [
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Pathfinding",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Archery",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Logistics",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Scouting",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Diplomacy",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Navigation",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Leadership",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Wisdom",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Mysticism",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Luck",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Ballistics",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "EagleEye",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Necromancy",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Estates",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "FireMagic",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "AirMagic",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "WaterMagic",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "EarthMagic",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Scholar",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Tactics",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Artillery",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Learning",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Offense",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Armorer",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Intelligence",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Sorcery",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "Resistance",
+        },
+      ],
+    },
+    Object {
+      "count": 1,
+      "skills": Array [
+        Object {
+          "level": "Basic",
+          "type": "FirstAid",
+        },
+      ],
+    },
+  ],
+]
+`;

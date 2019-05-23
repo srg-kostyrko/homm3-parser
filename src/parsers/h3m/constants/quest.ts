@@ -1,14 +1,14 @@
 export enum QuestType {
-  NONE,
-  Experience,
-  PrimarySkills,
-  DefeatHero,
-  DefeatMonster,
-  Artifacts,
-  Creatures,
-  Resources,
-  BeHero,
-  BePlayer
+  NONE = 'NONE',
+  Experience = 'Experience',
+  PrimarySkills = 'PrimarySkills',
+  DefeatHero = 'DefeatHero',
+  DefeatMonster = 'DefeatMonster',
+  Artifacts = 'Artifacts',
+  Creatures = 'Creatures',
+  Resources = 'Resources',
+  BeHero = 'BeHero',
+  BePlayer = 'BePlayer',
 }
 
 export const questEnum = {
@@ -21,21 +21,21 @@ export const questEnum = {
   [QuestType.Creatures]: 0x06,
   [QuestType.Resources]: 0x07,
   [QuestType.BeHero]: 0x08,
-  [QuestType.BePlayer]: 0x09
+  [QuestType.BePlayer]: 0x09,
 }
 
 export enum QuestReward {
-  NONE,
-  Experience,
-  SpellPoints,
-  Morale,
-  Luck,
-  Resource,
-  PrimarySkill,
-  SecondarySkill,
-  Artifact,
-  Spell,
-  Creature
+  NONE = 'NONE',
+  Experience = 'Experience',
+  SpellPoints = 'SpellPoints',
+  Morale = 'Morale',
+  Luck = 'Luck',
+  Resource = 'Resource',
+  PrimarySkill = 'PrimarySkill',
+  SecondarySkill = 'SecondarySkill',
+  Artifact = 'Artifact',
+  Spell = 'Spell',
+  Creature = 'Creature',
 }
 
 export const questRewardEnum = {
@@ -49,5 +49,5 @@ export const questRewardEnum = {
   [QuestReward.SecondarySkill]: 0x07,
   [QuestReward.Artifact]: 0x08,
   [QuestReward.Spell]: 0x09,
-  [QuestReward.Creature]: 0x0a
+  [QuestReward.Creature]: 0x0a,
 }

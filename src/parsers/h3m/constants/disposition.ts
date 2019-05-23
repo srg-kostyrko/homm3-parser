@@ -1,9 +1,9 @@
 export enum Disposition {
-  Compliant, // will always join hero
-  Friendly, // likely to join hero
-  Aggressive, // may join hero
-  Hostile, // unlikely to join hero
-  Savage // will never join hero
+  Compliant = 'Compliant', // will always join hero
+  Friendly = 'Friendly', // likely to join hero
+  Aggressive = 'Aggressive', // may join hero
+  Hostile = 'Hostile', // unlikely to join hero
+  Savage = 'Savage', // will never join hero
 }
 
 export const dispositioEnum = {
@@ -11,5 +11,5 @@ export const dispositioEnum = {
   [Disposition.Friendly]: 1,
   [Disposition.Aggressive]: 2,
   [Disposition.Hostile]: 3,
-  [Disposition.Savage]: 4
+  [Disposition.Savage]: 4,
 }

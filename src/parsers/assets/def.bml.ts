@@ -15,10 +15,12 @@ import {
   endian,
   Endian,
   Context,
-  skip
+  skip,
 } from 'binary-markup'
 
 const rgb = bytes(3)
+
+type RGB = [number, number, number]
 
 const filePointer = (context: Context): number => {
   const index = context.get<number>('index')
@@ -48,12 +50,12 @@ const codeFragment = struct<Line>(
   branch(
     ctx`code`,
     {
-      0xff: bytes(context => context.get<number>('length') + 1)
+      0xff: bytes(context => context.get<number>('length') + 1),
     },
     computed(context =>
-      new Array<number>(context.get<number>('length') + 1).fill(context.get<number>('code'))
-    )
-  )`content`
+      new Array<number>(context.get<number>('length') + 1).fill(context.get<number>('code')),
+    ),
+  )`content`,
 )
 
 const segmentFragment = struct<Line>(
@@ -63,19 +65,30 @@ const segmentFragment = struct<Line>(
   branch(
     ctx`code`,
     {
-      7: bytes(ctx`length`)
+      7: bytes(ctx`length`),
     },
-    computed(context => new Array<number>(context.get('length')).fill(context.get<number>('code')))
-  )`content`
+    computed(context => new Array<number>(context.get('length')).fill(context.get<number>('code'))),
+  )`content`,
 )
 
 const lineReducer = (acc: number[], list: Line[]): number[] =>
   acc.concat(
     //
-    list.reduce((a: number[], l: Line): number[] => a.concat(l.content), [])
+    list.reduce((a: number[], l: Line): number[] => a.concat(l.content), []),
   )
 
-const file = struct(
+interface File {
+  size: number
+  fullWidth: number
+  fullHeight: number
+  width: number
+  height: number
+  left: number
+  top: number
+  pixels: number[]
+}
+
+const file = struct<File>(
   uint32`size`,
   uint32`encoding`,
   uint32`fullWidth`,
@@ -92,26 +105,29 @@ const file = struct(
       array(
         //
         pointer(linePointer, repeatWhile(codeFragment, repeatCondition)),
-        ctx`height`
-      )`lines`
+        ctx`height`,
+      )`lines`,
     ),
     2: struct(
       array(uint16, ctx`height`)`lineOffsets`,
       skip(2),
-      array(pointer(linePointer, repeatWhile(segmentFragment, repeatCondition)), ctx`height`)`lines`
+      array(
+        pointer(linePointer, repeatWhile(segmentFragment, repeatCondition)),
+        ctx`height`,
+      )`lines`,
     ),
     3: struct(
       array(
         array(uint16, context => Math.ceil(context.get<number>('width') / 32)),
-        ctx`height`
+        ctx`height`,
       )`lineOffsets`,
       array(
         array(repeatWhile(segmentFragment, repeatCondition), context =>
-          Math.ceil(context.get<number>('width') / 32)
+          Math.ceil(context.get<number>('width') / 32),
         )`line`,
-        ctx`height`
-      )`lines`
-    )
+        ctx`height`,
+      )`lines`,
+    ),
   })`content`,
   branch(ctx`encoding`, {
     0: computed(ctx<number[]>`content`),
@@ -123,30 +139,45 @@ const file = struct(
         (acc: number[], line) =>
           acc.concat(
             //
-            line.reduce(lineReducer, [])
+            line.reduce(lineReducer, []),
           ),
-        []
-      )
-    )
-  })`pixels`
+        [],
+      ),
+    ),
+  })`pixels`,
 )
 
-const block = struct(
+interface Block {
+  block_id: number
+  entriesCount: number
+  filenames: string[]
+  files: File[]
+}
+
+const block = struct<Block>(
   uint32`block_id`,
   uint32`entriesCount`,
   uint32`unknown`,
   uint32`unknown`,
   array(string(13), ctx`entriesCount`)`filenames`,
   array(uint32, ctx`entriesCount`)`offsets`,
-  array(pointer(filePointer, file), ctx`entriesCount`)`files`
+  array(pointer(filePointer, file), ctx`entriesCount`)`files`,
 )
 
-export const defFile = struct(
+export interface DefFile {
+  width: number
+  height: number
+  blockCount: number
+  palette: RGB[]
+  blocks: Block[]
+}
+
+export const defFile = struct<DefFile>(
   endian(Endian.LE),
   uint32`type`,
   uint32`width`,
   uint32`height`,
   uint32`blockCount`,
   array(rgb, 256)`palette`,
-  array(block, ctx`blockCount`)`blocks`
+  array(block, ctx`blockCount`)`blocks`,
 )

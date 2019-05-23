@@ -12,7 +12,7 @@ import {
   pointer,
   when,
   computed,
-  bytes
+  bytes,
 } from 'binary-markup'
 
 const file = struct(
@@ -24,15 +24,28 @@ const file = struct(
   uint32,
   uint32`csize`,
   computed(ctx`csize`.neq(0))`compressed`,
-  pointer(ctx`offset`, when(ctx`compressed`, bytes(ctx`csize`), bytes(ctx`size`)))`content`
+  pointer(ctx`offset`, when(ctx`compressed`, bytes(ctx`csize`), bytes(ctx`size`)))`content`,
 )
 
-export const lodFile = struct(
+interface LodFileEntry {
+  name: string
+  size: number
+  csize: number
+  compressed: boolean
+  content: number[]
+}
+
+export interface LodFile {
+  count: number
+  entries: LodFileEntry[]
+}
+
+export const lodFile = struct<LodFile>(
   //
   endian(Endian.LE),
   constant(cString(), 'LOD'),
   seek(8),
   uint32`count`,
   seek(92),
-  array(file, ctx`count`)`files`
+  array(file, ctx`count`)`entries`,
 )

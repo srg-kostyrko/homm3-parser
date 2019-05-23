@@ -9,5 +9,9 @@
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/@typescript-eslint"
-  ]
+  ],
+  "env": {
+    "node": true,
+    "jest": true
+  }
 }

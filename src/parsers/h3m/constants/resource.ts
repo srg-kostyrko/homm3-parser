@@ -1,11 +1,11 @@
 export enum Resource {
-  Wood,
-  Mercury,
-  Ore,
-  Sulfur,
-  Crystal,
-  Gems,
-  Gold
+  Wood = 'Wood',
+  Mercury = 'Mercury',
+  Ore = 'Ore',
+  Sulfur = 'Sulfur',
+  Crystal = 'Crystal',
+  Gems = 'Gems',
+  Gold = 'Gold',
 }
 
 export const resourceEnum = {
@@ -15,5 +15,5 @@ export const resourceEnum = {
   [Resource.Sulfur]: 3,
   [Resource.Crystal]: 4,
   [Resource.Gems]: 5,
-  [Resource.Gold]: 6
+  [Resource.Gold]: 6,
 }
