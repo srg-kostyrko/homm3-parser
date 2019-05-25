@@ -32,17 +32,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 0,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 2,
@@ -77,17 +80,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Rampart",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Rampart",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 1,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 1,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 5,
@@ -122,17 +128,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Tower",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Tower",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 2,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 2,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 8,
@@ -167,17 +176,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Inferno",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Inferno",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 3,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 3,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 11,
@@ -212,17 +224,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Necropolis",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Necropolis",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 4,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 4,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 14,
@@ -257,17 +272,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Dungeon",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Dungeon",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 5,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 5,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 17,
@@ -302,17 +320,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Stronghold",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Stronghold",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 6,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 6,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 20,
@@ -347,18 +368,21 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 1,
+            "min": 1,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 1,
-          "min": 1,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 23,
@@ -393,17 +417,20 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "level": Object {
+            "max": 2,
+            "min": 1,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 2,
-          "min": 1,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 26,
@@ -438,21 +465,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 3,
       "x": 2,
@@ -487,21 +517,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 4,
       "x": 5,
@@ -536,21 +569,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 5,
       "x": 8,
@@ -585,21 +621,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 6,
       "x": 11,
@@ -634,21 +673,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 7,
       "x": 14,
@@ -683,21 +725,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 8,
       "x": 17,
@@ -732,21 +777,24 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": Array [
-            "Castle",
-            "Rampart",
-            "Tower",
-            "Inferno",
-            "Necropolis",
-            "Dungeon",
-            "Stronghold",
-            "Fortress",
-            "Conflux",
-          ],
-          "castleAbsodId": 0,
+        "data": Object {
+          "castle": Object {
+            "alignments": Array [
+              "Castle",
+              "Rampart",
+              "Tower",
+              "Inferno",
+              "Necropolis",
+              "Dungeon",
+              "Stronghold",
+              "Fortress",
+              "Conflux",
+            ],
+            "castleAbsodId": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingLevel",
       },
       "oaIndex": 9,
       "x": 20,
@@ -781,11 +829,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 10,
       "x": 2,
@@ -820,11 +871,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 11,
       "x": 5,
@@ -859,11 +913,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 12,
       "x": 8,
@@ -898,11 +955,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 13,
       "x": 11,
@@ -937,11 +997,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 14,
       "x": 14,
@@ -976,11 +1039,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 15,
       "x": 17,
@@ -1015,11 +1081,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 16,
       "x": 20,
@@ -1054,11 +1123,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 17,
       "x": 23,
@@ -1093,11 +1165,14 @@ Object {
         ],
       },
       "body": Object {
-        "level": Object {
-          "max": 6,
-          "min": 0,
+        "data": Object {
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "owner": "Neutral",
+        "type": "RandomDwellingAlignment",
       },
       "oaIndex": 18,
       "x": 26,
@@ -1132,15 +1207,18 @@ Object {
         ],
       },
       "body": Object {
-        "castle": Object {
-          "alignments": null,
-          "castleAbsodId": 2282018828,
+        "data": Object {
+          "castle": Object {
+            "alignments": null,
+            "castleAbsodId": 2282018828,
+          },
+          "level": Object {
+            "max": 6,
+            "min": 0,
+          },
+          "owner": "Neutral",
         },
-        "level": Object {
-          "max": 6,
-          "min": 0,
-        },
-        "owner": "Neutral",
+        "type": "RandomDwelling",
       },
       "oaIndex": 2,
       "x": 2,
@@ -1175,21 +1253,24 @@ Object {
         ],
       },
       "body": Object {
-        "absodId": 2282018828,
-        "alignment": 255,
-        "buildings": null,
-        "buildingsCustomized": false,
-        "eventCount": 0,
-        "events": Array [],
-        "formation": 0,
-        "garrison": null,
-        "hasFort": true,
-        "hasGarrison": 0,
-        "hasName": 0,
-        "mayHaveSpells": Array [],
-        "mustHaveSpells": Array [],
-        "name": null,
-        "owner": "Neutral",
+        "data": Object {
+          "absodId": 2282018828,
+          "alignment": 255,
+          "buildings": null,
+          "buildingsCustomized": false,
+          "eventCount": 0,
+          "events": Array [],
+          "formation": 0,
+          "garrison": null,
+          "hasFort": true,
+          "hasGarrison": 0,
+          "hasName": 0,
+          "mayHaveSpells": Array [],
+          "mustHaveSpells": Array [],
+          "name": null,
+          "owner": "Neutral",
+        },
+        "type": "Town",
       },
       "oaIndex": 19,
       "x": 9,

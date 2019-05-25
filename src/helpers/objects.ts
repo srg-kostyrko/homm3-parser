@@ -1,5 +1,5 @@
-import { ObjectType, objectTypeToMeta } from '../parsers/h3m/constants/object'
-import { MetaType } from '../parsers/h3m/constants/meta'
+import { ObjectType, objectTypeToMeta } from '../parsers/h3m/enums/object'
+import { MetaType } from '../parsers/h3m/contracts/enums/MetaType'
 import { createAdapter, TagProducer, TagOrWrapper } from 'binary-markup'
 
 export function getMetaType(type: ObjectType): MetaType {

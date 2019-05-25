@@ -1,39 +1,35 @@
-import { uint8, uint32, when, branch, struct, pass, ctx, enums, skip, flag } from 'binary-markup'
-
-import { quest, Quest } from './quest.bml'
-import { seersHut, SeersHut } from './seersHut.bml'
-import { town, Town } from './town.bml'
-import { isNotRoE, hommString, army, Army } from '../common.bml'
-import { MetaType } from '../constants/meta'
-import { FlaggedProp } from '../../../helpers/types'
-import { Spell, spellEnum } from '../constants/spell'
-import { Scholar, scholar } from './scholar.bml'
-import { Player, playerEnum } from '../constants/player'
 import {
-  randomDwelling,
-  randomDwellingAlignment,
-  randomDwellingLevel,
-  RandomDwelling,
-  RandomDwellingAlignment,
-  RandomDwellingLevel,
-} from './randomDwelling.bml'
-import { WitchHut, witchHut } from './witchHut.bml'
-import { Guardians, guardians } from './common.bml'
-import { HeroPlaceholder, HeroData, heroPlaceholder, heroData } from './hero.bml'
-import { PandoraBox, pandoraBox } from './pandoraBox.bml'
-import { Creature, creatureData } from './creature.bml'
-import { event } from './event.bml'
+  uint8,
+  uint32,
+  when,
+  branch,
+  struct,
+  pass,
+  ctx,
+  enums,
+  skip,
+  flag,
+  computed,
+} from 'binary-markup'
 
-export interface MessageBearer {
-  message: string
-}
+import { quest } from './quest.bml'
+import { seersHut } from './seersHut.bml'
+import { town } from './town.bml'
+import { isNotRoE, hommString, army } from '../common.bml'
+import { MetaType } from '../contracts/enums/MetaType'
+import { spellEnum } from '../enums/spell'
+import { scholar } from './scholar.bml'
+import { playerEnum } from '../enums/player'
+import { randomDwelling, randomDwellingAlignment, randomDwellingLevel } from './randomDwelling.bml'
+import { guardians } from './common.bml'
+import { heroPlaceholder, heroData } from './hero.bml'
+import { pandoraBox } from './pandoraBox.bml'
+import { creatureData } from './creature.bml'
+import { event } from './event.bml'
+import { skillsMask } from '../enums/skill'
+
 const messageBearer = struct(hommString`message`, skip(4))
 
-export interface Garrison {
-  owner: Player
-  creatures: Army
-  removableUnits: number
-}
 const garrison = struct(
   enums(uint32, playerEnum)`owner`,
   army`creatures`,
@@ -41,39 +37,23 @@ const garrison = struct(
   skip(8),
 )
 
-export interface Grail {
-  allowableRadius: number
-}
 const grail = struct(uint32`allowableRadius`)
 
-export interface Flagged {
-  owner: Player
-}
 const flagged = struct(uint32`owner`)
 
-export type ArtifactObject = FlaggedProp<'hasGuardians', 'guardians', Guardians>
 const artifactObject = struct(
   //
   flag`hasGuardians`,
   when(ctx`hasGuardians`, guardians)`guardians`,
 )
-export interface Shrine {
-  spell: Spell
-}
 const shrine = struct(uint32`spell`)
 
-export type SpellScroll = ArtifactObject & {
-  spell: Spell
-}
 const spellScroll = struct(
   flag`hasGuardians`,
   when(ctx`hasGuardians`, guardians)`guardians`,
   enums(uint32, spellEnum)`spell`,
 )
 
-export type ResourceData = ArtifactObject & {
-  quantity: number
-}
 const resource = struct(
   flag`hasGuardians`,
   when(ctx`hasGuardians`, guardians)`hasGuardians`,
@@ -81,29 +61,7 @@ const resource = struct(
   skip(4),
 )
 
-export type ObjectBody =
-  | HeroPlaceholder
-  | Quest
-  | PandoraBox
-  | MessageBearer
-  | Garrison
-  | Event
-  | Grail
-  | Flagged
-  | Town
-  | RandomDwelling
-  | RandomDwellingAlignment
-  | RandomDwellingLevel
-  | HeroData
-  | Creature
-  | ArtifactObject
-  | Shrine
-  | SpellScroll
-  | ResourceData
-  | WitchHut
-  | SeersHut
-  | Scholar
-  | {}
+const witchHut = struct(skillsMask`potentialSkills`)
 
 const bodyMap = {
   [MetaType.PlaceholderHero]: heroPlaceholder,
@@ -146,4 +104,7 @@ const bodyMap = {
   [MetaType.Scholar]: scholar,
 }
 
-export const objectBody = branch<unknown>(ctx`attributes.metaType`, bodyMap)
+export const objectBody = struct(
+  computed(ctx`attributes.metaType`)`type`,
+  branch<unknown>(ctx`type`, bodyMap)`data`,
+)

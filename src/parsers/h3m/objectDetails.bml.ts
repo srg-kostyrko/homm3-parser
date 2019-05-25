@@ -1,21 +1,12 @@
-import { uint8, uint32, array, struct, computed, ctx, skip, tap } from 'binary-markup'
-import { objectBody, ObjectBody } from './objectDetails/body.bml'
-import { ObjectAttribute, ObjectAttributes } from './objectAttributes.bml'
+import { uint8, uint32, array, struct, computed, ctx, skip } from 'binary-markup'
+import { objectBody } from './objectDetails/body.bml'
+import { ObjectAttributes } from './contracts/ObjectAttributes'
 
 const attributes = computed(context => {
   const index = context.get<number>('oaIndex')
   const objectAttributes = context.get<ObjectAttributes>('objectAttributes').entries
   return objectAttributes[index]
 })
-
-export interface MapObject {
-  x: number
-  y: number
-  z: number
-  oaIndex: number
-  attribute: ObjectAttribute
-  body: ObjectBody
-}
 
 const entry = struct(
   //
@@ -27,11 +18,6 @@ const entry = struct(
   skip(5),
   objectBody`body`,
 )
-
-export interface ObjectDetails {
-  count: number
-  entries: MapObject[]
-}
 
 export const objectDetails = struct(
   //

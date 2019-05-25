@@ -1,4 +1,4 @@
-import { byte, uint16, int32, enums, struct, array, pass, branch, when, ctx } from 'binary-markup'
+import { byte, int32, enums, struct, array, pass, branch, when, ctx } from 'binary-markup'
 import {
   experience,
   primarySkills,
@@ -8,30 +8,10 @@ import {
   playerFlag,
   creatureSlot,
   hommString,
-  PrimarySkills,
-  Resources,
-  CreatureSlot,
   artifact,
 } from '../common.bml'
-import { QuestType, questEnum } from '../constants/quest'
-import { Hero } from '../constants/hero'
-import { Player } from '../player.bml'
-
-export type Objective =
-  | number
-  | PrimarySkills
-  | number
-  | Resources
-  | Hero
-  | Player
-  | {
-      count: number
-      creatures: CreatureSlot
-    }
-  | {
-      count: number
-      artifacts: number[]
-    }
+import { questEnum } from '../enums/quest'
+import { QuestType } from '../contracts/enums/QuestType'
 
 const questBranches = {
   [QuestType.NONE]: pass,
@@ -51,21 +31,6 @@ const messages = struct(
   hommString`progressMessage`,
   hommString`completionMessage`,
 )
-
-export type Quest =
-  | {
-      questType: QuestType.NONE
-    }
-  | {
-      questType: QuestType
-      objective: Objective
-      deadline: number[]
-      messages: {
-        proposalMessage: string
-        progressMessage: string
-        completionMessage: string
-      }
-    }
 
 export const quest = struct(
   enums(byte, questEnum)`questType`,

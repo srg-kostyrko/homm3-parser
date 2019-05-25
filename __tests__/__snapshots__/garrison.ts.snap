@@ -32,38 +32,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Pikeman",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Halberdier",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Archer",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Marksman",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Griffin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "RoyalGriffin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Swordsman",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Pikeman",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Halberdier",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Archer",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Marksman",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Griffin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "RoyalGriffin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Swordsman",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 2,
@@ -98,38 +101,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Crusader",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Monk",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Zealot",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Cavalier",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Champion",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Angel",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Archangel",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Crusader",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Monk",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Zealot",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Cavalier",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Champion",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Angel",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Archangel",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 5,
@@ -164,38 +170,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Centaur",
-          },
-          Object {
-            "quantity": 1,
-            "type": "CentaurCaptain",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Dwarf",
-          },
-          Object {
-            "quantity": 1,
-            "type": "BattleDwarf",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WoodElf",
-          },
-          Object {
-            "quantity": 1,
-            "type": "GrandElf",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Pegasus",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Centaur",
+            },
+            Object {
+              "quantity": 1,
+              "type": "CentaurCaptain",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Dwarf",
+            },
+            Object {
+              "quantity": 1,
+              "type": "BattleDwarf",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WoodElf",
+            },
+            Object {
+              "quantity": 1,
+              "type": "GrandElf",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Pegasus",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 8,
@@ -230,38 +239,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "SilverPegasus",
-          },
-          Object {
-            "quantity": 1,
-            "type": "DendroidGuard",
-          },
-          Object {
-            "quantity": 1,
-            "type": "DendroidSoldier",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Unicorn",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WarUnicorn",
-          },
-          Object {
-            "quantity": 1,
-            "type": "GreenDragon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "GoldDragon",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "SilverPegasus",
+            },
+            Object {
+              "quantity": 1,
+              "type": "DendroidGuard",
+            },
+            Object {
+              "quantity": 1,
+              "type": "DendroidSoldier",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Unicorn",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WarUnicorn",
+            },
+            Object {
+              "quantity": 1,
+              "type": "GreenDragon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "GoldDragon",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 11,
@@ -296,38 +308,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Gremlin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MasterGremlin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "StoneGargoyle",
-          },
-          Object {
-            "quantity": 1,
-            "type": "ObsidianGargoyle",
-          },
-          Object {
-            "quantity": 1,
-            "type": "StoneGolem",
-          },
-          Object {
-            "quantity": 1,
-            "type": "IronGolem",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Mage",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Gremlin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MasterGremlin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "StoneGargoyle",
+            },
+            Object {
+              "quantity": 1,
+              "type": "ObsidianGargoyle",
+            },
+            Object {
+              "quantity": 1,
+              "type": "StoneGolem",
+            },
+            Object {
+              "quantity": 1,
+              "type": "IronGolem",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Mage",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 14,
@@ -362,38 +377,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "ArchMage",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Genie",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MasterGenie",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Naga",
-          },
-          Object {
-            "quantity": 1,
-            "type": "NagaQueen",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Giant",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Titan",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "ArchMage",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Genie",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MasterGenie",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Naga",
+            },
+            Object {
+              "quantity": 1,
+              "type": "NagaQueen",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Giant",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Titan",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 17,
@@ -428,38 +446,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Imp",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Familiar",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Gog",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Magog",
-          },
-          Object {
-            "quantity": 1,
-            "type": "HellHound",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Cerberus",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Demon",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Imp",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Familiar",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Gog",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Magog",
+            },
+            Object {
+              "quantity": 1,
+              "type": "HellHound",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Cerberus",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Demon",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 20,
@@ -494,38 +515,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "HornedDemon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "PitFiend",
-          },
-          Object {
-            "quantity": 1,
-            "type": "PitLord",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Efreeti",
-          },
-          Object {
-            "quantity": 1,
-            "type": "EfreetSultan",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Devil",
-          },
-          Object {
-            "quantity": 1,
-            "type": "ArchDevil",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "HornedDemon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "PitFiend",
+            },
+            Object {
+              "quantity": 1,
+              "type": "PitLord",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Efreeti",
+            },
+            Object {
+              "quantity": 1,
+              "type": "EfreetSultan",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Devil",
+            },
+            Object {
+              "quantity": 1,
+              "type": "ArchDevil",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 23,
@@ -560,38 +584,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Skeleton",
-          },
-          Object {
-            "quantity": 1,
-            "type": "SkeletonWarrior",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WalkingDead",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Zombie",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Wight",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Wraith",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Vampire",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Skeleton",
+            },
+            Object {
+              "quantity": 1,
+              "type": "SkeletonWarrior",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WalkingDead",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Zombie",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Wight",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Wraith",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Vampire",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 26,
@@ -626,38 +653,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "VampireLord",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Lich",
-          },
-          Object {
-            "quantity": 1,
-            "type": "PowerLich",
-          },
-          Object {
-            "quantity": 1,
-            "type": "BlackKnight",
-          },
-          Object {
-            "quantity": 1,
-            "type": "DreadKnight",
-          },
-          Object {
-            "quantity": 1,
-            "type": "BoneDragon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "GhostDragon",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "VampireLord",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Lich",
+            },
+            Object {
+              "quantity": 1,
+              "type": "PowerLich",
+            },
+            Object {
+              "quantity": 1,
+              "type": "BlackKnight",
+            },
+            Object {
+              "quantity": 1,
+              "type": "DreadKnight",
+            },
+            Object {
+              "quantity": 1,
+              "type": "BoneDragon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "GhostDragon",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 29,
@@ -692,38 +722,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Troglodyte",
-          },
-          Object {
-            "quantity": 1,
-            "type": "InfernalTroglodyte",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Harpy",
-          },
-          Object {
-            "quantity": 1,
-            "type": "HarpyHag",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Beholder",
-          },
-          Object {
-            "quantity": 1,
-            "type": "EvilEye",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Medusa",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Troglodyte",
+            },
+            Object {
+              "quantity": 1,
+              "type": "InfernalTroglodyte",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Harpy",
+            },
+            Object {
+              "quantity": 1,
+              "type": "HarpyHag",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Beholder",
+            },
+            Object {
+              "quantity": 1,
+              "type": "EvilEye",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Medusa",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 2,
@@ -758,38 +791,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "MedusaQueen",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Minotaur",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MinotaurKing",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Manticore",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Scorpicore",
-          },
-          Object {
-            "quantity": 1,
-            "type": "RedDragon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "BlackDragon",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "MedusaQueen",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Minotaur",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MinotaurKing",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Manticore",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Scorpicore",
+            },
+            Object {
+              "quantity": 1,
+              "type": "RedDragon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "BlackDragon",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 5,
@@ -824,38 +860,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Goblin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Hobgoblin",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WolfRrider",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WolfRaider",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Orc",
-          },
-          Object {
-            "quantity": 1,
-            "type": "OrcChieftain",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Ogre",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Goblin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Hobgoblin",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WolfRrider",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WolfRaider",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Orc",
+            },
+            Object {
+              "quantity": 1,
+              "type": "OrcChieftain",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Ogre",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 8,
@@ -890,38 +929,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "OgreMage",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Roc",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Thunderbird",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Cyclops",
-          },
-          Object {
-            "quantity": 1,
-            "type": "CyclopsKing",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Behemoth",
-          },
-          Object {
-            "quantity": 1,
-            "type": "AncientBehemoth",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "OgreMage",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Roc",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Thunderbird",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Cyclops",
+            },
+            Object {
+              "quantity": 1,
+              "type": "CyclopsKing",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Behemoth",
+            },
+            Object {
+              "quantity": 1,
+              "type": "AncientBehemoth",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 11,
@@ -956,38 +998,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Gnoll",
-          },
-          Object {
-            "quantity": 1,
-            "type": "GnollMarauder",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Lizardman",
-          },
-          Object {
-            "quantity": 1,
-            "type": "LizardWarrior",
-          },
-          Object {
-            "quantity": 1,
-            "type": "SerpentFly",
-          },
-          Object {
-            "quantity": 1,
-            "type": "DragonFly",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Basilisk",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Gnoll",
+            },
+            Object {
+              "quantity": 1,
+              "type": "GnollMarauder",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Lizardman",
+            },
+            Object {
+              "quantity": 1,
+              "type": "LizardWarrior",
+            },
+            Object {
+              "quantity": 1,
+              "type": "SerpentFly",
+            },
+            Object {
+              "quantity": 1,
+              "type": "DragonFly",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Basilisk",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 14,
@@ -1022,38 +1067,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "GreaterBasilisk",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Gorgon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MightyGorgon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Wyvern",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WyvernMonarch",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Hydra",
-          },
-          Object {
-            "quantity": 1,
-            "type": "ChaosHydra",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "GreaterBasilisk",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Gorgon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MightyGorgon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Wyvern",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WyvernMonarch",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Hydra",
+            },
+            Object {
+              "quantity": 1,
+              "type": "ChaosHydra",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 17,
@@ -1088,38 +1136,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Pixie",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Sprite",
-          },
-          Object {
-            "quantity": 1,
-            "type": "AirElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "StormElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "WaterElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MagmaElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "FireElemental",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Pixie",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Sprite",
+            },
+            Object {
+              "quantity": 1,
+              "type": "AirElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "StormElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "WaterElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MagmaElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "FireElemental",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 20,
@@ -1154,38 +1205,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "IceElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "EarthElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "EnergyElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "PsychicElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "MagicElemental",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Firebird",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Phoenix",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "IceElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "EarthElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "EnergyElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "PsychicElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "MagicElemental",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Firebird",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Phoenix",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 23,
@@ -1220,38 +1274,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "Halfling",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Peasant",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Boar",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Rogue",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Mummy",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Nomad",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Sharpshooter",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "Halfling",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Peasant",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Boar",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Rogue",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Mummy",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Nomad",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Sharpshooter",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 26,
@@ -1286,38 +1343,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "GoldGolem",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Troll",
-          },
-          Object {
-            "quantity": 1,
-            "type": "DiamondGolem",
-          },
-          Object {
-            "quantity": 1,
-            "type": "Enchanter",
-          },
-          Object {
-            "quantity": 1,
-            "type": "AzureDragon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "CrystalDragon",
-          },
-          Object {
-            "quantity": 1,
-            "type": "FaerieDragon",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "GoldGolem",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Troll",
+            },
+            Object {
+              "quantity": 1,
+              "type": "DiamondGolem",
+            },
+            Object {
+              "quantity": 1,
+              "type": "Enchanter",
+            },
+            Object {
+              "quantity": 1,
+              "type": "AzureDragon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "CrystalDragon",
+            },
+            Object {
+              "quantity": 1,
+              "type": "FaerieDragon",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 29,
@@ -1352,38 +1412,41 @@ Object {
         ],
       },
       "body": Object {
-        "creatures": Array [
-          Object {
-            "quantity": 1,
-            "type": "RustDragon",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-          Object {
-            "quantity": 0,
-            "type": "EMPTY",
-          },
-        ],
-        "owner": "Neutral",
-        "removableUnits": 1,
+        "data": Object {
+          "creatures": Array [
+            Object {
+              "quantity": 1,
+              "type": "RustDragon",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+            Object {
+              "quantity": 0,
+              "type": "EMPTY",
+            },
+          ],
+          "owner": "Neutral",
+          "removableUnits": 1,
+        },
+        "type": "Garrison",
       },
       "oaIndex": 2,
       "x": 2,

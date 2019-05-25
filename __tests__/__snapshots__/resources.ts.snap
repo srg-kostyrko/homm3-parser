@@ -31,7 +31,10 @@ Object {
           127,
         ],
       },
-      "body": null,
+      "body": Object {
+        "data": null,
+        "type": "Treasure",
+      },
       "oaIndex": 2,
       "x": 1,
       "y": 1,
@@ -65,12 +68,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "crystal",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "crystal",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 3,
       "x": 3,
@@ -105,12 +111,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "Gems",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "Gems",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 4,
       "x": 5,
@@ -145,12 +154,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "gold",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "gold",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 5,
       "x": 7,
@@ -185,12 +197,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "mercury",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "mercury",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 6,
       "x": 9,
@@ -225,12 +240,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ore",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ore",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 7,
       "x": 11,
@@ -265,12 +283,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sulfur",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sulfur",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 8,
       "x": 13,
@@ -305,12 +326,15 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "wood",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "wood",
+          },
+          "quantity": 0,
         },
-        "quantity": 0,
+        "type": "Resource",
       },
       "oaIndex": 9,
       "x": 1,
@@ -345,8 +369,11 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": null,
-        "quantity": 0,
+        "data": Object {
+          "hasGuardians": null,
+          "quantity": 0,
+        },
+        "type": "Resource",
       },
       "oaIndex": 10,
       "x": 3,
@@ -381,41 +408,44 @@ Object {
         ],
       },
       "body": Object {
-        "hasGuardians": Object {
-          "creatures": Array [
-            Object {
-              "quantity": 1,
-              "type": "Pikeman",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 2,
-              "type": "Griffin",
-            },
-          ],
-          "hasCreatures": true,
-          "message": "with guardians",
+        "data": Object {
+          "hasGuardians": Object {
+            "creatures": Array [
+              Object {
+                "quantity": 1,
+                "type": "Pikeman",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 2,
+                "type": "Griffin",
+              },
+            ],
+            "hasCreatures": true,
+            "message": "with guardians",
+          },
+          "quantity": 10,
         },
-        "quantity": 10,
+        "type": "Resource",
       },
       "oaIndex": 10,
       "x": 1,
@@ -450,7 +480,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 2,
+        "data": Object {
+          "owner": 2,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 3,
@@ -485,7 +518,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 4,
+        "data": Object {
+          "owner": 4,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 7,
@@ -520,7 +556,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 72,
+        "data": Object {
+          "owner": 72,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 11,
@@ -555,7 +594,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 16,
+        "data": Object {
+          "owner": 16,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 15,
@@ -590,7 +632,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 32,
+        "data": Object {
+          "owner": 32,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 19,
@@ -625,7 +670,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 64,
+        "data": Object {
+          "owner": 64,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 23,
@@ -660,7 +708,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 126,
+        "data": Object {
+          "owner": 126,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 11,
       "x": 27,
@@ -695,7 +746,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 0,
+        "data": Object {
+          "owner": 0,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 12,
       "x": 3,
@@ -730,7 +784,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 1,
+        "data": Object {
+          "owner": 1,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 13,
       "x": 6,
@@ -765,7 +822,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 2,
+        "data": Object {
+          "owner": 2,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 14,
       "x": 9,
@@ -800,7 +860,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 3,
+        "data": Object {
+          "owner": 3,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 15,
       "x": 12,
@@ -835,7 +898,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 4,
+        "data": Object {
+          "owner": 4,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 16,
       "x": 15,
@@ -870,7 +936,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 5,
+        "data": Object {
+          "owner": 5,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 17,
       "x": 19,
@@ -905,7 +974,10 @@ Object {
         ],
       },
       "body": Object {
-        "owner": 6,
+        "data": Object {
+          "owner": 6,
+        },
+        "type": "ResourceGenerator",
       },
       "oaIndex": 18,
       "x": 22,

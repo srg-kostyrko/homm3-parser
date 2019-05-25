@@ -1,6 +1,7 @@
-import { struct, enums, byte, bitMask, Context, TagProducer } from 'binary-markup'
-import { terrainsEnum, riversEnum, roadsEnum, Terrain, River, Road } from './constants/tiles'
-import { Info } from './info.bml'
+import { struct, enums, byte, Context, TagProducer } from 'binary-markup'
+import { terrainsEnum, riversEnum, roadsEnum } from './enums/tiles'
+import { Tile } from './contracts/Tiles'
+import { Info } from './contracts/Info'
 
 // terrainY: 1,
 // terrainX: 2,
@@ -8,22 +9,6 @@ import { Info } from './info.bml'
 // riverX: 8,
 // roadY: 16,
 // roadX: 32,
-
-export interface Tile {
-  terrain: {
-    type: Terrain
-    sprite: number
-  }
-  river: {
-    type: River
-    sprite: number
-  }
-  road: {
-    type: Road
-    sprite: number
-  }
-  mirror: number
-}
 
 const tilePart = <T extends string>(
   typeEnum: Record<T, number>,
@@ -34,7 +19,7 @@ const tilePart = <T extends string>(
     byte`sprite`,
   )
 
-export const tile = struct(
+export const tile = struct<Tile>(
   tilePart(terrainsEnum)`terrain`,
   tilePart(riversEnum)`river`,
   tilePart(roadsEnum)`road`,

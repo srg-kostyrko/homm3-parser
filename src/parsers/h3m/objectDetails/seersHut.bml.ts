@@ -1,4 +1,4 @@
-import { pass, byte, bytes, struct, uint32, when, ctx, branch, enums, skip } from 'binary-markup'
+import { pass, byte, struct, uint32, when, ctx, branch, enums, skip } from 'binary-markup'
 import {
   isRoE,
   isNotRoE,
@@ -8,15 +8,11 @@ import {
   resource,
   creatureSlot,
   secondarySkill,
-  SecondarySkill,
-  CreatureSlot,
 } from '../common.bml'
-import { quest, Quest } from './quest.bml'
-import { QuestReward, questRewardEnum } from '../constants/quest'
-import { Artifact } from '../constants/artifact'
-import { Resource } from '../constants/resource'
-import { Spell } from '../constants/spell'
-import { primarySkillEnum, PrimarySkill } from '../constants/skill'
+import { quest } from './quest.bml'
+import { questRewardEnum } from '../enums/quest'
+import { primarySkillEnum } from '../enums/skill'
+import { QuestReward } from '../contracts/enums/QuestReward'
 
 const rewardBranches = {
   [QuestReward.NONE]: pass,
@@ -31,58 +27,6 @@ const rewardBranches = {
   [QuestReward.SecondarySkill]: secondarySkill,
   [QuestReward.Creature]: creatureSlot,
 }
-
-export type SeersHutQuestReward =
-  | {
-      rewardType: QuestReward.NONE
-    }
-  | {
-      rewardType: QuestReward.Experience
-      reward: number
-    }
-  | {
-      rewardType: QuestReward.SecondarySkill
-      reward: SecondarySkill
-    }
-  | {
-      rewardType: QuestReward.Artifact
-      reward: Artifact
-    }
-  | {
-      rewardType: QuestReward.Luck
-      reward: number
-    }
-  | {
-      rewardType: QuestReward.Morale
-      reward: number
-    }
-  | {
-      rewardType: QuestReward.Spell
-      reward: Spell
-    }
-  | {
-      rewardType: QuestReward.Resource
-      reward: {
-        resource: Resource
-        quantity: number
-      }
-    }
-  | {
-      rewardType: QuestReward.PrimarySkill
-      reward: {
-        skill: PrimarySkill
-        bonus: number
-      }
-    }
-  | {
-      rewardType: QuestReward.Creature
-      reward: CreatureSlot
-    }
-
-export type SeersHut = {
-  artifactType?: Artifact
-  quest?: Quest
-} & SeersHutQuestReward
 
 export const seersHut = struct(
   // In RoE the only type of quest is "Return with artifacts", which in ROE is

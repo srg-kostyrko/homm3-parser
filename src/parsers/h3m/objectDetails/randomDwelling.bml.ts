@@ -1,7 +1,7 @@
-import { struct, uint8, uint32, uint16, ctx, when, enums, bitMask, array } from 'binary-markup'
-import { Player, playerEnum } from '../constants/player'
-import { Alignment } from '../constants/alignment'
+import { struct, uint8, uint32, uint16, ctx, when, enums, array } from 'binary-markup'
+import { playerEnum } from '../enums/player'
 import { bitMasksArray } from '../../../helpers/objects'
+import { Alignment } from '../contracts/enums/Alignment'
 
 const alignmentBits: [number, Alignment][][] = [
   [
@@ -19,18 +19,6 @@ const alignmentBits: [number, Alignment][][] = [
 
 const alignmentMask = bitMasksArray(array(uint16, 1), alignmentBits)
 
-export interface RandomDwelling {
-  owner: Player
-  castle: {
-    castleAbsodId: number
-    alignments?: Alignment[]
-  }
-  level: {
-    minLevel: number
-    maxLevel: number
-  }
-}
-
 export const randomDwelling = struct(
   enums(uint32, playerEnum)`owner`,
   struct(
@@ -41,27 +29,11 @@ export const randomDwelling = struct(
   struct(uint8`min`, uint8`max`)`level`,
 )
 
-export interface RandomDwellingAlignment {
-  owner: Player
-  level: {
-    minLevel: number
-    maxLevel: number
-  }
-}
-
 export const randomDwellingAlignment = struct(
   //
   enums(uint32, playerEnum)`owner`,
   struct(uint8`min`, uint8`max`)`level`,
 )
-
-export interface RandomDwellingLevel {
-  owner: Player
-  castle: {
-    castleAbsodId: number
-    alignments?: Alignment[]
-  }
-}
 
 export const randomDwellingLevel = struct(
   enums(uint32, playerEnum)`owner`,

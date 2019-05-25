@@ -16,18 +16,21 @@ import {
 } from 'binary-markup'
 
 import { MapFormat } from './constants'
-import { artifactEnum, Artifact } from './constants/artifact'
-import { creatureEnum, Creature } from './constants/creature'
-import { heroEnum } from './constants/hero'
+import { artifactEnum } from './enums/artifact'
+import { creatureEnum } from './enums/creature'
+import { heroEnum } from './enums/hero'
+import { secondarySkillEnum, secondarySkillMasteryEnum } from './enums/skill'
+import { spellEnum } from './enums/spell'
+import { resourceEnum } from './enums/resource'
+import { playerEnum } from './enums/player'
 import {
-  secondarySkillEnum,
-  SecondarySkillType,
-  secondarySkillMasteryEnum,
-  SecondarySkillMastery,
-} from './constants/skill'
-import { spellEnum } from './constants/spell'
-import { resourceEnum } from './constants/resource'
-import { playerEnum } from './constants/player'
+  PrimarySkills,
+  CreatureSlot,
+  WornArtifacts,
+  Backpack,
+  Artifacts,
+  SecondarySkillData,
+} from './contracts/common'
 
 export const isRoE = (context: Context): boolean => context.get('format') === MapFormat.ROE
 export const isSoD = (context: Context): boolean => context.get('format') === MapFormat.SOD
@@ -35,12 +38,6 @@ export const isNotRoE = (context: Context): boolean => context.get('format') !==
 
 export const hommString = pascalString(uint32)
 
-export interface PrimarySkills {
-  attack: number
-  defense: number
-  spellPower: number
-  knowledge: number
-}
 export const primarySkills = struct<PrimarySkills>(
   uint8`attack`,
   uint8`defense`,
@@ -50,11 +47,7 @@ export const primarySkills = struct<PrimarySkills>(
 
 export const skill = enums(byte, secondarySkillEnum)
 
-export interface SecondarySkill {
-  type: SecondarySkillType
-  level: SecondarySkillMastery
-}
-export const secondarySkill = struct<SecondarySkill>(
+export const secondarySkill = struct<SecondarySkillData>(
   skill`type`,
   enums(uint8, secondarySkillMasteryEnum)`level`,
 )
@@ -73,46 +66,11 @@ export const hero = enums(heroType, heroEnum)
 export const spell = enums(spellType, spellEnum)
 export const resource = enums(resourceType, resourceEnum)
 
-export interface CreatureSlot {
-  type: Creature
-  quantity: number
-}
 export const creatureSlot = struct<CreatureSlot>(creature`type`, uint16`quantity`)
 
-export type Army = [
-  CreatureSlot,
-  CreatureSlot,
-  CreatureSlot,
-  CreatureSlot,
-  CreatureSlot,
-  CreatureSlot,
-  CreatureSlot
-]
 export const army = array(creatureSlot, 7)
 
-export type Resources = number[]
 export const resources = array(int32, 7)
-
-export interface WornArtifacts {
-  headwear: Artifact
-  shoulders: Artifact
-  rightHand: Artifact
-  leftHand: Artifact
-  torso: Artifact
-  rightRing: Artifact
-  leftRing: Artifact
-  feet: Artifact
-  misc1: Artifact
-  misc2: Artifact
-  misc3: Artifact
-  misc4: Artifact
-  device1: Artifact
-  device2: Artifact
-  device3: Artifact
-  device4: Artifact
-  spellbook: Artifact
-  misc5: Artifact
-}
 
 export const wornArtifacts = struct<WornArtifacts>(
   artifact`headwear`,
@@ -136,21 +94,12 @@ export const wornArtifacts = struct<WornArtifacts>(
   artifact`misc5`,
 )
 
-export interface Backpack {
-  count: number
-  artifacts: Artifact
-}
-
 export const backpack = struct<Backpack>(
   //
   uint16`count`,
   array(artifact, ctx`count`)`artifacts`,
 )
 
-export interface Artifacts {
-  worn: WornArtifacts
-  backpack: Backpack
-}
 export const artifacts = struct<Artifacts>(wornArtifacts`worn`, backpack`backpack`)
 
 export const owner = enums(byte, playerEnum)

@@ -1,12 +1,9 @@
 import { byte, uint16, uint32, bytes, array, when, struct, ctx, skip, flag } from 'binary-markup'
 
-import { isSoD, isNotRoE, hommString, army, resources, owner, Army, Resources } from '../common.bml'
-import { Building } from '../constants/buildings'
-import { Player } from '../player.bml'
-import { FlaggedProp } from '../../../helpers/types'
-import { Formation } from '../constants/formation'
-import { Spell, spellsMask } from '../constants/spell'
+import { isSoD, isNotRoE, hommString, army, resources, owner } from '../common.bml'
+import { spellsMask } from '../enums/spell'
 import { bitMasksArray } from '../../../helpers/objects'
+import { Building } from '../contracts/enums/Building'
 
 const buildingsBits: [number, Building][][] = [
   [
@@ -64,19 +61,6 @@ const buildingsBits: [number, Building][][] = [
 
 const buildingsAdapter = bitMasksArray(bytes(6), buildingsBits)
 
-export interface TownEvent {
-  name: string
-  message: string
-  resources: Resources
-  appliesToPlayers: boolean
-  appliesToHuman?: boolean
-  appliesToComputer: boolean
-  firstOccurence: number
-  subsequentOccurences: number
-  buildings: Building[]
-  creatureQuantities: number[]
-}
-
 const townEvent = struct(
   hommString`name`,
   hommString`message`,
@@ -91,33 +75,6 @@ const townEvent = struct(
   array(uint16, 7)`creatureQuantities`, // 1 for each generator
   skip(4),
 )
-
-export type BuildingsType =
-  | {
-      buildingsCustomized: false
-    }
-  | {
-      buildingsCustomized: true
-      buildings: {
-        built: Building[]
-        disables: Building[]
-      }
-      hasFort: boolean
-    }
-
-export type Town = {
-  absodId: number
-  owner: Player
-  formation: Formation
-  buildingsCustomized: boolean
-  mustHaveSpells?: Spell[]
-  mayHaveSpells: Spell[]
-  eventCount: number
-  events: TownEvent
-  alignment: number
-} & FlaggedProp<'hasName', 'name', string> &
-  FlaggedProp<'hasGarrison', 'garrison', Army> &
-  BuildingsType
 
 export const town = struct(
   when(isNotRoE, uint32)`absodId`,

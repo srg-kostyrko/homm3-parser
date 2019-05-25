@@ -32,19 +32,22 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": 63,
-          "messages": Object {
-            "completionMessage": "I thought you had promise.  You have indeed reached level 5. Come in, come in.  Here, I have something to reward you for your efforts.  Do you accept?",
-            "progressMessage": "Faugh.  You again.  Come back when you are level 5, as I told you.",
-            "proposalMessage": "I am old and wise, and I do not admit just anyone into my home.  You may enter when you have reached experience level 5.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": 63,
+            "messages": Object {
+              "completionMessage": "I thought you had promise.  You have indeed reached level 5. Come in, come in.  Here, I have something to reward you for your efforts.  Do you accept?",
+              "progressMessage": "Faugh.  You again.  Come back when you are level 5, as I told you.",
+              "proposalMessage": "I am old and wise, and I do not admit just anyone into my home.  You may enter when you have reached experience level 5.",
+            },
+            "objective": 5,
+            "questType": "Experience",
           },
-          "objective": 5,
-          "questType": "Experience",
+          "reward": 1000,
+          "rewardType": "Experience",
         },
-        "reward": 1000,
-        "rewardType": "Experience",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 2,
@@ -79,24 +82,27 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "I've always wanted to meet someone as famous as you.  Will you let me write down your life story?",
-            "progressMessage": "Have you found a great hero for me to interview?  He must have reached Attack Skill 1, Defense Skill 2, Spell Power 3 and Knowledge 4.",
-            "proposalMessage": "I am a biographer of great heroes.  I'd really like to meet a hero who has mastered Attack Skill 1, Defense Skill 2, Spell Power 3 and Knowledge 4.  I'd pay well for his story.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "I've always wanted to meet someone as famous as you.  Will you let me write down your life story?",
+              "progressMessage": "Have you found a great hero for me to interview?  He must have reached Attack Skill 1, Defense Skill 2, Spell Power 3 and Knowledge 4.",
+              "proposalMessage": "I am a biographer of great heroes.  I'd really like to meet a hero who has mastered Attack Skill 1, Defense Skill 2, Spell Power 3 and Knowledge 4.  I'd pay well for his story.",
+            },
+            "objective": Object {
+              "attack": 1,
+              "defense": 2,
+              "knowledge": 4,
+              "spellPower": 3,
+            },
+            "questType": "PrimarySkills",
           },
-          "objective": Object {
-            "attack": 1,
-            "defense": 2,
-            "knowledge": 4,
-            "spellPower": 3,
-          },
-          "questType": "PrimarySkills",
+          "reward": 10,
+          "rewardType": "SpellPoints",
         },
-        "reward": 10,
-        "rewardType": "SpellPoints",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 5,
@@ -131,28 +137,31 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "Ah, exactly what I needed!  Here is the reward I promised.  You still wish to trade the Angel Wings and Arms of Legion, yes?",
-            "progressMessage": "Nothing, eh?  I'm sure you will find the Angel Wings and Arms of Legion soon.  Please keep looking.",
-            "proposalMessage": "Long ago, powerful wizards were able to create magical artifacts, but time has caused us to forget how to make new items.  I would like to learn these techniques myself, but I need one of these artifacts first to see how it was done.  If you could bring me, the Angel Wings and Arms of Legion, you would be well rewarded. ",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "Ah, exactly what I needed!  Here is the reward I promised.  You still wish to trade the Angel Wings and Arms of Legion, yes?",
+              "progressMessage": "Nothing, eh?  I'm sure you will find the Angel Wings and Arms of Legion soon.  Please keep looking.",
+              "proposalMessage": "Long ago, powerful wizards were able to create magical artifacts, but time has caused us to forget how to make new items.  I would like to learn these techniques myself, but I need one of these artifacts first to see how it was done.  If you could bring me, the Angel Wings and Arms of Legion, you would be well rewarded. ",
+            },
+            "objective": Object {
+              "artifacts": Array [
+                "AngelWings",
+                "ArmsOfLegion",
+              ],
+              "count": 2,
+            },
+            "questType": "Artifacts",
           },
-          "objective": Object {
-            "artifacts": Array [
-              "AngelWings",
-              "ArmsOfLegion",
-            ],
-            "count": 2,
+          "reward": Object {
+            "quantity": 10,
+            "resource": "Sulfur",
           },
-          "questType": "Artifacts",
+          "rewardType": "Resource",
         },
-        "reward": Object {
-          "quantity": 10,
-          "resource": "Sulfur",
-        },
-        "rewardType": "Resource",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 2,
@@ -187,34 +196,37 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "At last, the 1 Archer and 10 Monks that will save our empire!  Here is your payment. Are they ready to depart?",
-            "progressMessage": "No luck in finding the 1 Archer and 10 Monks?  Please hurry, the empire depends on you.",
-            "proposalMessage": "I am an agent for an emperor of a distant land.  Recently, his armies have fallen on hard times.  If you could bring 1 Archer and 10 Monks to me, I could pay you handsomely.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "At last, the 1 Archer and 10 Monks that will save our empire!  Here is your payment. Are they ready to depart?",
+              "progressMessage": "No luck in finding the 1 Archer and 10 Monks?  Please hurry, the empire depends on you.",
+              "proposalMessage": "I am an agent for an emperor of a distant land.  Recently, his armies have fallen on hard times.  If you could bring 1 Archer and 10 Monks to me, I could pay you handsomely.",
+            },
+            "objective": Object {
+              "count": 2,
+              "creatures": Array [
+                Object {
+                  "quantity": 1,
+                  "type": "Archer",
+                },
+                Object {
+                  "quantity": 10,
+                  "type": "Monk",
+                },
+              ],
+            },
+            "questType": "Creatures",
           },
-          "objective": Object {
-            "count": 2,
-            "creatures": Array [
-              Object {
-                "quantity": 1,
-                "type": "Archer",
-              },
-              Object {
-                "quantity": 10,
-                "type": "Monk",
-              },
-            ],
+          "reward": Object {
+            "bonus": 2,
+            "skill": "Defence",
           },
-          "questType": "Creatures",
+          "rewardType": "PrimarySkill",
         },
-        "reward": Object {
-          "bonus": 2,
-          "skill": "Defence",
-        },
-        "rewardType": "PrimarySkill",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 5,
@@ -249,19 +261,22 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "I thought the day would never come!  Sorsha is no more.  Please, will you accept this reward?",
-            "progressMessage": "Oh, I wish you brought better news.  It aches my heart that Sorsha still roams free.",
-            "proposalMessage": "I was once rich and famous, but Sorsha the terrible was my downfall.  I lost my lands, I lost my title, and I lost my family.  Please, bring the villain to justice.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "I thought the day would never come!  Sorsha is no more.  Please, will you accept this reward?",
+              "progressMessage": "Oh, I wish you brought better news.  It aches my heart that Sorsha still roams free.",
+              "proposalMessage": "I was once rich and famous, but Sorsha the terrible was my downfall.  I lost my lands, I lost my title, and I lost my family.  Please, bring the villain to justice.",
+            },
+            "objective": 372973065,
+            "questType": "DefeatHero",
           },
-          "objective": 372973065,
-          "questType": "DefeatHero",
+          "reward": 3,
+          "rewardType": "Morale",
         },
-        "reward": 3,
-        "rewardType": "Morale",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 8,
@@ -296,32 +311,35 @@ Object {
         ],
       },
       "body": Object {
-        "absodId": 372973065,
-        "artifacts": null,
-        "biography": Object {
-          "biography": null,
-          "hasBiography": false,
+        "data": Object {
+          "absodId": 372973065,
+          "artifacts": null,
+          "biography": Object {
+            "biography": null,
+            "hasBiography": false,
+          },
+          "creatures": null,
+          "experience": null,
+          "face": null,
+          "formation": "Spread",
+          "gender": "Default",
+          "hasArtifacts": false,
+          "hasCreatures": false,
+          "hasExperience": false,
+          "hasFace": false,
+          "hasName": false,
+          "hasPrimarySkills": false,
+          "hasSecondarySkills": false,
+          "hasSpells": false,
+          "hero": "Sorsha",
+          "name": null,
+          "owner": "Red",
+          "patrolRadius": 255,
+          "primarySkills": null,
+          "secondarySkills": null,
+          "spells": null,
         },
-        "creatures": null,
-        "experience": null,
-        "face": null,
-        "formation": "Spread",
-        "gender": "Default",
-        "hasArtifacts": false,
-        "hasCreatures": false,
-        "hasExperience": false,
-        "hasFace": false,
-        "hasName": false,
-        "hasPrimarySkills": false,
-        "hasSecondarySkills": false,
-        "hasSpells": false,
-        "hero": "Sorsha",
-        "name": null,
-        "owner": "Red",
-        "patrolRadius": 255,
-        "primarySkills": null,
-        "secondarySkills": null,
-        "spells": null,
+        "type": "Hero",
       },
       "oaIndex": 3,
       "x": 11,
@@ -356,19 +374,22 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "At last, you defeated the Peasants, and the countryside is safe again!  Are you ready to accept the reward?",
-            "progressMessage": "Don't lose heart.  Defeating the Peasants is a difficult task, but you will surely succeed.",
-            "proposalMessage": "Peasants are menacing the northern region of this land.  If you could be so bold as to defeat them, I would reward you richly.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "At last, you defeated the Peasants, and the countryside is safe again!  Are you ready to accept the reward?",
+              "progressMessage": "Don't lose heart.  Defeating the Peasants is a difficult task, but you will surely succeed.",
+              "proposalMessage": "Peasants are menacing the northern region of this land.  If you could be so bold as to defeat them, I would reward you richly.",
+            },
+            "objective": 372973066,
+            "questType": "DefeatMonster",
           },
-          "objective": 372973066,
-          "questType": "DefeatMonster",
+          "reward": 2,
+          "rewardType": "Luck",
         },
-        "reward": 2,
-        "rewardType": "Luck",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 13,
@@ -403,13 +424,16 @@ Object {
         ],
       },
       "body": Object {
-        "absodId": 372973066,
-        "disposition": "Aggressive",
-        "doesNotGrow": false,
-        "hasMessageAndTreasure": false,
-        "messageAndTreasure": null,
-        "neverFlees": false,
-        "quantity": 0,
+        "data": Object {
+          "absodId": 372973066,
+          "disposition": "Aggressive",
+          "doesNotGrow": false,
+          "hasMessageAndTreasure": false,
+          "messageAndTreasure": null,
+          "neverFlees": false,
+          "quantity": 0,
+        },
+        "type": "Creature",
       },
       "oaIndex": 4,
       "x": 15,
@@ -444,30 +468,33 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "Finally!  Here, give the 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold to me, and I'll give you this in return.",
-            "progressMessage": "Oh my, that's simply not enough.  I need 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold.  I'll never complete it with what you have.",
-            "proposalMessage": "I am researching a way to turn base metals into gold, but I am short of materials for my workshop.  If you could bring me 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold, I would be most grateful.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "Finally!  Here, give the 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold to me, and I'll give you this in return.",
+              "progressMessage": "Oh my, that's simply not enough.  I need 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold.  I'll never complete it with what you have.",
+              "proposalMessage": "I am researching a way to turn base metals into gold, but I am short of materials for my workshop.  If you could bring me 1 Wood, 2 Mercury, 3 Ore, 4 Sulfur, 5 Crystal, 6 Gems and 7 Gold, I would be most grateful.",
+            },
+            "objective": Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+            ],
+            "questType": "Resources",
           },
-          "objective": Array [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-          ],
-          "questType": "Resources",
+          "reward": Object {
+            "level": "Advanced",
+            "type": "Navigation",
+          },
+          "rewardType": "SecondarySkill",
         },
-        "reward": Object {
-          "level": "Advanced",
-          "type": "Navigation",
-        },
-        "rewardType": "SecondarySkill",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 8,
@@ -502,19 +529,22 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "Finally!  It is you, Malcom.  Here is what I have for you.  Do you accept?",
-            "progressMessage": "You are not Malcom.  Begone!",
-            "proposalMessage": "What I have is for Malcom alone.  I shall give it to none other.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "Finally!  It is you, Malcom.  Here is what I have for you.  Do you accept?",
+              "progressMessage": "You are not Malcom.  Begone!",
+              "proposalMessage": "What I have is for Malcom alone.  I shall give it to none other.",
+            },
+            "objective": "Malcom",
+            "questType": "BeHero",
           },
-          "objective": "Malcom",
-          "questType": "BeHero",
+          "reward": "AngelicAlliance",
+          "rewardType": "Artifact",
         },
-        "reward": "AngelicAlliance",
-        "rewardType": "Artifact",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 13,
@@ -549,19 +579,22 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "Ah, one who bears the tan flag.  Here is a prize for you.  Do you accept?",
-            "progressMessage": "Your flag is not tan.  I have nothing for you.  Begone!",
-            "proposalMessage": "I have a prize for those who fly the tan flag.",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "Ah, one who bears the tan flag.  Here is a prize for you.  Do you accept?",
+              "progressMessage": "Your flag is not tan.  I have nothing for you.  Begone!",
+              "proposalMessage": "I have a prize for those who fly the tan flag.",
+            },
+            "objective": "Tan",
+            "questType": "BePlayer",
           },
-          "objective": "Tan",
-          "questType": "BePlayer",
+          "reward": "MagicMirror",
+          "rewardType": "Spell",
         },
-        "reward": "MagicMirror",
-        "rewardType": "Spell",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 2,
@@ -596,22 +629,25 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": -1,
-          "messages": Object {
-            "completionMessage": "",
-            "progressMessage": "",
-            "proposalMessage": "",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": -1,
+            "messages": Object {
+              "completionMessage": "",
+              "progressMessage": "",
+              "proposalMessage": "",
+            },
+            "objective": "Red",
+            "questType": "BePlayer",
           },
-          "objective": "Red",
-          "questType": "BePlayer",
+          "reward": Object {
+            "quantity": 2,
+            "type": "Crusader",
+          },
+          "rewardType": "Creature",
         },
-        "reward": Object {
-          "quantity": 2,
-          "type": "Crusader",
-        },
-        "rewardType": "Creature",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 2,
@@ -646,15 +682,18 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": null,
-          "messages": null,
-          "objective": null,
-          "questType": "NONE",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": null,
+            "messages": null,
+            "objective": null,
+            "questType": "NONE",
+          },
+          "reward": null,
+          "rewardType": "NONE",
         },
-        "reward": null,
-        "rewardType": "NONE",
+        "type": "SeersHut",
       },
       "oaIndex": 5,
       "x": 3,
@@ -689,15 +728,18 @@ Object {
         ],
       },
       "body": Object {
-        "artifactType": null,
-        "quest": Object {
-          "deadline": null,
-          "messages": null,
-          "objective": null,
-          "questType": "NONE",
+        "data": Object {
+          "artifactType": null,
+          "quest": Object {
+            "deadline": null,
+            "messages": null,
+            "objective": null,
+            "questType": "NONE",
+          },
+          "reward": null,
+          "rewardType": "NONE",
         },
-        "reward": null,
-        "rewardType": "NONE",
+        "type": "SeersHut",
       },
       "oaIndex": 2,
       "x": 6,

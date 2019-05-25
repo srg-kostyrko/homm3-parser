@@ -1,10 +1,10 @@
 import { parse, StreamInput, TagOrWrapper } from 'binary-markup'
 import { inflate } from 'pako'
-import { h3mFile, H3MFile } from './parsers/h3m/h3m.bml'
+import { h3mFile } from './parsers/h3m/h3m.bml'
+import { H3MFile } from './parsers/h3m/contracts'
 
 export * from './parsers/assets'
-
-export { H3MFile } from './parsers/h3m/h3m.bml'
+export * from './parsers/h3m/contracts'
 
 export function parseH3M(data: StreamInput): H3MFile {
   return parse<H3MFile>(h3mFile, data)

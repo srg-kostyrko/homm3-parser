@@ -1,13 +1,7 @@
 import { struct, uint32, int32, int8, uint8, array, flag, when, ctx, skip } from 'binary-markup'
-import { FlaggedProp } from '../../../helpers/types'
 import {
-  Army,
   army,
   hommString,
-  Resources,
-  PrimarySkills,
-  SecondarySkill,
-  CreatureSlot,
   resources,
   primarySkills,
   secondarySkill,
@@ -15,14 +9,6 @@ import {
   spell,
   creatureSlot,
 } from '../common.bml'
-import { Artifact } from '../constants/artifact'
-import { Spell } from '../constants/spell'
-
-export type Guardians = {
-  message: string
-} & FlaggedProp<'hasCreatures', 'creatures', Army>
-
-export type WithGuardians = FlaggedProp<'hasGuardians', 'guardians', Guardians>
 
 export const guardians = struct(
   hommString`message`,
@@ -30,23 +16,6 @@ export const guardians = struct(
   when(ctx`hasCreatures`, army)`creatures`,
   skip(4),
 )
-
-export interface Contents {
-  experience: number
-  spellPoints: number
-  morale: number
-  luck: number
-  resources: Resources
-  primarySkills: PrimarySkills
-  secondarySkillsCount: number
-  secondarySkills: SecondarySkill[]
-  artifactsCount: number
-  artifacts: Artifact[]
-  spellsCount: number
-  spells: Spell[]
-  creaturesCount: number
-  creatures: CreatureSlot[]
-}
 
 export const contents = struct(
   uint32`experience`,

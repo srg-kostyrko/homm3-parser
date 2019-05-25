@@ -32,13 +32,16 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "spell scroll slow",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "spell scroll slow",
+          },
+          "hasGuardians": true,
+          "spell": "Slow",
         },
-        "hasGuardians": true,
-        "spell": "Slow",
+        "type": "SpellScroll",
       },
       "oaIndex": 2,
       "x": 1,
@@ -73,12 +76,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "centaurus axe",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "centaurus axe",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 3,
       "x": 1,
@@ -113,12 +119,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "blackshard dead knight",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "blackshard dead knight",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 4,
       "x": 3,
@@ -153,12 +162,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "gnoll flail",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "gnoll flail",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 5,
       "x": 5,
@@ -193,12 +205,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "orge club",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "orge club",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 6,
       "x": 7,
@@ -233,12 +248,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sword hellfire",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sword hellfire",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 7,
       "x": 9,
@@ -273,12 +291,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "titan gladius",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "titan gladius",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 8,
       "x": 11,
@@ -313,12 +334,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "shield dwarven lords",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "shield dwarven lords",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 9,
       "x": 1,
@@ -353,12 +377,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "shield yawning dead",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "shield yawning dead",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 10,
       "x": 3,
@@ -393,12 +420,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "buckler gnoll king",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "buckler gnoll king",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 11,
       "x": 5,
@@ -433,12 +463,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "targ ogre",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "targ ogre",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 12,
       "x": 7,
@@ -473,12 +506,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "shield damned",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "shield damned",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 13,
       "x": 9,
@@ -513,12 +549,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sentinel shield",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sentinel shield",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 14,
       "x": 11,
@@ -553,12 +592,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "helm unicorn",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "helm unicorn",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 15,
       "x": 1,
@@ -593,12 +635,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "skull helmet",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "skull helmet",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 16,
       "x": 3,
@@ -633,12 +678,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "helm chaos",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "helm chaos",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 17,
       "x": 5,
@@ -673,12 +721,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "crown magi",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "crown magi",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 18,
       "x": 7,
@@ -713,12 +764,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "hellstorm helmet",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "hellstorm helmet",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 19,
       "x": 9,
@@ -753,12 +807,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "thunder helmet",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "thunder helmet",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 20,
       "x": 11,
@@ -793,12 +850,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "breastplate of pertified wood",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "breastplate of pertified wood",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 21,
       "x": 1,
@@ -833,12 +893,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "rib cage",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "rib cage",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 22,
       "x": 3,
@@ -873,12 +936,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "tunic cyclop",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "tunic cyclop",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 23,
       "x": 7,
@@ -913,12 +979,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "breasplate brimstone",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "breasplate brimstone",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 24,
       "x": 9,
@@ -953,12 +1022,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "titan cuirass",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "titan cuirass",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 25,
       "x": 11,
@@ -993,12 +1065,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "armor wonder",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "armor wonder",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 26,
       "x": 13,
@@ -1033,12 +1108,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "lion shierd",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "lion shierd",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 27,
       "x": 13,
@@ -1073,12 +1151,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sandals saint",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sandals saint",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 28,
       "x": 1,
@@ -1113,12 +1194,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "necklace bliss",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "necklace bliss",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 29,
       "x": 1,
@@ -1153,12 +1237,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sword judgement",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sword judgement",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 30,
       "x": 13,
@@ -1193,12 +1280,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "helm enlightment",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "helm enlightment",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 31,
       "x": 13,
@@ -1233,12 +1323,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "eye dragon",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "eye dragon",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 32,
       "x": 1,
@@ -1273,12 +1366,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "dragon togue",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "dragon togue",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 33,
       "x": 15,
@@ -1313,12 +1409,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "dragon scale shield",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "dragon scale shield",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 34,
       "x": 15,
@@ -1353,12 +1452,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sragon scale armor",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sragon scale armor",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 35,
       "x": 15,
@@ -1393,12 +1495,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "dragonbone greaves",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "dragonbone greaves",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 36,
       "x": 3,
@@ -1433,12 +1538,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "dragon wing  tabard",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "dragon wing  tabard",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 37,
       "x": 1,
@@ -1473,12 +1581,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "becklace dragonteeth",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "becklace dragonteeth",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 38,
       "x": 3,
@@ -1513,12 +1624,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "crown dragonthooth",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "crown dragonthooth",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 39,
       "x": 15,
@@ -1553,12 +1667,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "still eye dragon",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "still eye dragon",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 40,
       "x": 3,
@@ -1593,12 +1710,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cards profecy",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cards profecy",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 41,
       "x": 5,
@@ -1633,12 +1753,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ladybird luck",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ladybird luck",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 42,
       "x": 7,
@@ -1673,12 +1796,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "badge courage",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "badge courage",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 43,
       "x": 9,
@@ -1713,12 +1839,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "crest valor",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "crest valor",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 44,
       "x": 11,
@@ -1753,12 +1882,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "glyph gallantry",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "glyph gallantry",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 45,
       "x": 13,
@@ -1793,12 +1925,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "speculum",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "speculum",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 46,
       "x": 15,
@@ -1833,12 +1968,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "spyglass",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "spyglass",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 47,
       "x": 17,
@@ -1873,12 +2011,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "garnitute interference",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "garnitute interference",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 48,
       "x": 5,
@@ -1913,12 +2054,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "surcoat counterpoise",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "surcoat counterpoise",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 49,
       "x": 17,
@@ -1953,12 +2097,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "boots polarity",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "boots polarity",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 50,
       "x": 5,
@@ -1993,12 +2140,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "bow cherrywood",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "bow cherrywood",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 51,
       "x": 19,
@@ -2033,12 +2183,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "bowstring unicorn",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "bowstring unicorn",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 52,
       "x": 21,
@@ -2073,12 +2226,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "angel feather arrows",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "angel feather arrows",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 53,
       "x": 23,
@@ -2113,12 +2269,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "bird perception",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "bird perception",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 54,
       "x": 25,
@@ -2153,12 +2312,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "stoic watchman",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "stoic watchman",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 55,
       "x": 27,
@@ -2193,12 +2355,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "emblem cognizance",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "emblem cognizance",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 56,
       "x": 29,
@@ -2233,12 +2398,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "stateman medal",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "stateman medal",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 57,
       "x": 31,
@@ -2273,12 +2441,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "clover fortune",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "clover fortune",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 58,
       "x": 3,
@@ -2313,12 +2484,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ambasadors sash",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ambasadors sash",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 59,
       "x": 33,
@@ -2353,12 +2527,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "gloves",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "gloves",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 60,
       "x": 35,
@@ -2393,12 +2570,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "diplomats ring",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "diplomats ring",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 61,
       "x": 5,
@@ -2433,12 +2613,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring warfire",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring warfire",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 62,
       "x": 7,
@@ -2473,12 +2656,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "necklace ocean guidance",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "necklace ocean guidance",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 63,
       "x": 7,
@@ -2513,12 +2699,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "angel wings",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "angel wings",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 64,
       "x": 1,
@@ -2553,12 +2742,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "charm of mana",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "charm of mana",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 65,
       "x": 9,
@@ -2593,12 +2785,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "talisman of mana",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "talisman of mana",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 66,
       "x": 3,
@@ -2633,12 +2828,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cape conjuring",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cape conjuring",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 67,
       "x": 19,
@@ -2673,12 +2871,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "orb firmament",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "orb firmament",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 68,
       "x": 5,
@@ -2713,12 +2914,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "orb silt",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "orb silt",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 69,
       "x": 7,
@@ -2753,12 +2957,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "orb fire",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "orb fire",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 70,
       "x": 9,
@@ -2793,12 +3000,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "orb rain",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "orb rain",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 71,
       "x": 11,
@@ -2833,12 +3043,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "recanter cloak",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "recanter cloak",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 72,
       "x": 21,
@@ -2873,12 +3086,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sprit opression",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sprit opression",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 73,
       "x": 13,
@@ -2913,12 +3129,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "hourglass",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "hourglass",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 74,
       "x": 15,
@@ -2953,12 +3172,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "tome fire magic",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "tome fire magic",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 75,
       "x": 17,
@@ -2993,12 +3215,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "tom air magic",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "tom air magic",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 76,
       "x": 19,
@@ -3033,12 +3258,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "tom water magic",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "tom water magic",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 77,
       "x": 21,
@@ -3073,12 +3301,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "tom earth magic",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "tom earth magic",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 78,
       "x": 23,
@@ -3113,12 +3344,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "boots levitation",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "boots levitation",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 79,
       "x": 7,
@@ -3153,12 +3387,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "golden bow",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "golden bow",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 80,
       "x": 25,
@@ -3193,12 +3430,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sphere permanence",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sphere permanence",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 81,
       "x": 27,
@@ -3233,12 +3473,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "prb vulnerability",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "prb vulnerability",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 82,
       "x": 29,
@@ -3273,13 +3516,16 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring vitality
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring vitality
 ",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 83,
       "x": 9,
@@ -3314,12 +3560,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring life",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring life",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 84,
       "x": 11,
@@ -3354,12 +3603,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "vial lifeblood",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "vial lifeblood",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 85,
       "x": 31,
@@ -3394,12 +3646,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "necklace swiftness",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "necklace swiftness",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 86,
       "x": 33,
@@ -3434,12 +3689,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "boots speed",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "boots speed",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 87,
       "x": 9,
@@ -3474,12 +3732,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cape velocity",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cape velocity",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 88,
       "x": 23,
@@ -3514,12 +3775,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant dispassion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant dispassion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 89,
       "x": 11,
@@ -3554,12 +3818,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant second sight",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant second sight",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 90,
       "x": 13,
@@ -3594,12 +3861,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant holiness",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant holiness",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 91,
       "x": 15,
@@ -3634,12 +3904,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant life",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant life",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 92,
       "x": 17,
@@ -3674,12 +3947,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant death",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant death",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 93,
       "x": 19,
@@ -3714,12 +3990,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant free will",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant free will",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 94,
       "x": 21,
@@ -3754,12 +4033,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant negativity",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant negativity",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 95,
       "x": 23,
@@ -3794,12 +4076,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant total recall",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant total recall",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 96,
       "x": 25,
@@ -3834,12 +4119,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "pendant courage",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "pendant courage",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 97,
       "x": 27,
@@ -3874,12 +4162,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "crystal cloak",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "crystal cloak",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 98,
       "x": 25,
@@ -3914,12 +4205,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring gems",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring gems",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 99,
       "x": 13,
@@ -3954,12 +4248,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "vial mercury",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "vial mercury",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 100,
       "x": 35,
@@ -3994,12 +4291,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cart ore",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cart ore",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 101,
       "x": 1,
@@ -4034,12 +4334,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring sulfur",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring sulfur",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 102,
       "x": 15,
@@ -4074,12 +4377,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cart lumber",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cart lumber",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 103,
       "x": 3,
@@ -4114,12 +4420,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sack gold",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sack gold",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 104,
       "x": 5,
@@ -4154,12 +4463,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "bag gold",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "bag gold",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 105,
       "x": 7,
@@ -4194,12 +4506,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "purse gold",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "purse gold",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 106,
       "x": 9,
@@ -4234,12 +4549,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "legs legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "legs legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 107,
       "x": 11,
@@ -4274,12 +4592,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "loins legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "loins legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 108,
       "x": 13,
@@ -4314,12 +4635,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "torso legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "torso legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 109,
       "x": 15,
@@ -4354,12 +4678,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "arms legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "arms legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 110,
       "x": 17,
@@ -4394,12 +4721,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "head legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "head legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 111,
       "x": 19,
@@ -4434,12 +4764,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "sea captain hat",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "sea captain hat",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 112,
       "x": 17,
@@ -4474,12 +4807,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "spellbinder hat",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "spellbinder hat",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 113,
       "x": 19,
@@ -4514,12 +4850,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "shackles war",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "shackles war",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 114,
       "x": 21,
@@ -4554,12 +4893,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "prb inhibition",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "prb inhibition",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 115,
       "x": 23,
@@ -4594,12 +4936,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "vial dragon blood",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "vial dragon blood",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 116,
       "x": 25,
@@ -4634,12 +4979,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "armageddon blade",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "armageddon blade",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 117,
       "x": 17,
@@ -4674,12 +5022,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "angelic alliance",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "angelic alliance",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 118,
       "x": 19,
@@ -4714,12 +5065,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cloak undead king",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cloak undead king",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 119,
       "x": 1,
@@ -4754,12 +5108,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "elixir life",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "elixir life",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 120,
       "x": 3,
@@ -4794,12 +5151,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "armor damned",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "armor damned",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 121,
       "x": 5,
@@ -4834,12 +5194,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "statue legion",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "statue legion",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 122,
       "x": 7,
@@ -4874,12 +5237,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "power dagon father",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "power dagon father",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 123,
       "x": 9,
@@ -4914,12 +5280,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "titan thunder",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "titan thunder",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 124,
       "x": 11,
@@ -4954,12 +5323,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "admiral hat",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "admiral hat",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 125,
       "x": 13,
@@ -4994,12 +5366,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "bow sharpshooter",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "bow sharpshooter",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 126,
       "x": 15,
@@ -5034,12 +5409,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "wizards well",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "wizards well",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 127,
       "x": 17,
@@ -5074,12 +5452,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "ring magi",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "ring magi",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 128,
       "x": 19,
@@ -5114,12 +5495,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "cornucopia",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "cornucopia",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 129,
       "x": 21,
@@ -5154,41 +5538,44 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": Array [
-            Object {
-              "quantity": 1,
-              "type": "Archer",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 1,
-              "type": "Archer",
-            },
-          ],
-          "hasCreatures": true,
-          "message": "random",
+        "data": Object {
+          "guardians": Object {
+            "creatures": Array [
+              Object {
+                "quantity": 1,
+                "type": "Archer",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 1,
+                "type": "Archer",
+              },
+            ],
+            "hasCreatures": true,
+            "message": "random",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 130,
       "x": 1,
@@ -5223,12 +5610,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "random treasure",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "random treasure",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 131,
       "x": 3,
@@ -5263,12 +5653,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "random minor",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "random minor",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 132,
       "x": 5,
@@ -5303,12 +5696,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "random major",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "random major",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 133,
       "x": 7,
@@ -5343,7 +5739,10 @@ Object {
         ],
       },
       "body": Object {
-        "allowableRadius": 5,
+        "data": Object {
+          "allowableRadius": 5,
+        },
+        "type": "Grail",
       },
       "oaIndex": 134,
       "x": 15,
@@ -5378,12 +5777,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "scales basilisk",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "scales basilisk",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 135,
       "x": 5,
@@ -5418,12 +5820,15 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": null,
-          "hasCreatures": false,
-          "message": "random relic",
+        "data": Object {
+          "guardians": Object {
+            "creatures": null,
+            "hasCreatures": false,
+            "message": "random relic",
+          },
+          "hasGuardians": true,
         },
-        "hasGuardians": true,
+        "type": "Artifact",
       },
       "oaIndex": 136,
       "x": 9,
@@ -5458,42 +5863,45 @@ Object {
         ],
       },
       "body": Object {
-        "guardians": Object {
-          "creatures": Array [
-            Object {
-              "quantity": 1,
-              "type": "Griffin",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-            Object {
-              "quantity": 1,
-              "type": "Swordsman",
-            },
-            Object {
-              "quantity": 0,
-              "type": "EMPTY",
-            },
-          ],
-          "hasCreatures": true,
-          "message": "spellscrol guardians",
+        "data": Object {
+          "guardians": Object {
+            "creatures": Array [
+              Object {
+                "quantity": 1,
+                "type": "Griffin",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+              Object {
+                "quantity": 1,
+                "type": "Swordsman",
+              },
+              Object {
+                "quantity": 0,
+                "type": "EMPTY",
+              },
+            ],
+            "hasCreatures": true,
+            "message": "spellscrol guardians",
+          },
+          "hasGuardians": true,
+          "spell": "Visions",
         },
-        "hasGuardians": true,
-        "spell": "Visions",
+        "type": "SpellScroll",
       },
       "oaIndex": 2,
       "x": 3,

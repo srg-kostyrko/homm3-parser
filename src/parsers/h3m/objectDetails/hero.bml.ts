@@ -1,7 +1,6 @@
 import {
   uint8,
   uint32,
-  bytes,
   pass,
   when,
   ctx,
@@ -12,16 +11,9 @@ import {
   array,
   struct,
 } from 'binary-markup'
-import { Player } from '../constants/player'
-import { Hero } from '../constants/hero'
-import { Formation, formationEnum } from '../constants/formation'
-import { FlaggedProp } from '../../../helpers/types'
-import { Gender, MapFormat, genderEnum } from '../constants'
+import { formationEnum } from '../enums/formation'
+import { MapFormat, genderEnum } from '../constants'
 import {
-  PrimarySkills,
-  SecondarySkill,
-  Army,
-  Artifacts,
   isNotRoE,
   owner,
   hero,
@@ -32,34 +24,8 @@ import {
   artifacts,
   primarySkills,
 } from '../common.bml'
-import { spellsMask, Spell, spellEnum } from '../constants/spell'
-
-export type HeroData = {
-  absodId?: number
-  owner: Player
-  hero: Hero
-  hasExperience?: boolean
-  experience?: number
-  formation: Formation
-  patrolRadius: number
-  biography: FlaggedProp<'hasBiography', 'biography', string>
-  gender: Gender
-  hasSpells?: boolean
-  spells: number | number[]
-  hasPrimarySkills?: boolean
-  primarySkills?: PrimarySkills
-} & FlaggedProp<'hasName', 'name', string> &
-  FlaggedProp<'hasFace', 'face', number> &
-  FlaggedProp<
-    'hasSecondarySkills',
-    'secondarySkills',
-    {
-      count: number
-      skills: SecondarySkill[]
-    }
-  > &
-  FlaggedProp<'hasCreatures', 'creatures', Army> &
-  FlaggedProp<'hasArtifacts', 'artifacts', Artifacts>
+import { spellsMask, spellEnum } from '../enums/spell'
+import { Spell } from '../contracts/enums/Spell'
 
 export const heroData = struct(
   when(isNotRoE, uint32)`absodId`,
@@ -101,12 +67,6 @@ export const heroData = struct(
   when(ctx`hasPrimarySkills`, primarySkills)`primarySkills`,
   skip(16),
 )
-
-export interface HeroPlaceholder {
-  owner: Player
-  type: number
-  powerRating: number
-}
 
 export const heroPlaceholder = struct(
   owner`owner`,

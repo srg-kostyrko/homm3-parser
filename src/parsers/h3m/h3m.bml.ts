@@ -3,25 +3,15 @@
 
 import { uint32, enums, struct, array, endian, Endian } from 'binary-markup'
 
-import { formatEnum, H3M_MAX_PLAYERS, MapFormat } from './constants'
-import { info, Info } from './info.bml'
-import { Player, player } from './player.bml'
-import { additionalInfo, AdditionalInfo } from './additionalInfo.bml'
-import { tile, Tile, calculateTiles } from './tiles.bml'
-import { objectAttributes, ObjectAttributes } from './objectAttributes.bml'
-import { objectDetails, ObjectDetails } from './objectDetails.bml'
-import { events, Events } from './events.bml'
-
-export interface H3MFile {
-  format: MapFormat
-  info: Info
-  players: Player[]
-  additionalInfo: AdditionalInfo
-  objectAttributes: ObjectAttributes
-  tiles: Tile[]
-  objectDetails: ObjectDetails
-  events: Events
-}
+import { formatEnum, H3M_MAX_PLAYERS } from './constants'
+import { info } from './info.bml'
+import { player } from './player.bml'
+import { additionalInfo } from './additionalInfo.bml'
+import { tile, calculateTiles } from './tiles.bml'
+import { objectAttributes } from './objectAttributes.bml'
+import { objectDetails } from './objectDetails.bml'
+import { events } from './events.bml'
+import { H3MFile } from './contracts'
 
 export const h3mFile = struct<H3MFile>(
   endian(Endian.LE),

@@ -32,8 +32,11 @@ Object {
         ],
       },
       "body": Object {
-        "rewardType": "Random",
-        "rewardValue": 0,
+        "data": Object {
+          "rewardType": "Random",
+          "rewardValue": 0,
+        },
+        "type": "Scholar",
       },
       "oaIndex": 2,
       "x": 1,
@@ -68,8 +71,11 @@ Object {
         ],
       },
       "body": Object {
-        "rewardType": "PrimarySkill",
-        "rewardValue": "SpellPower",
+        "data": Object {
+          "rewardType": "PrimarySkill",
+          "rewardValue": "SpellPower",
+        },
+        "type": "Scholar",
       },
       "oaIndex": 2,
       "x": 3,
@@ -104,8 +110,11 @@ Object {
         ],
       },
       "body": Object {
-        "rewardType": "SecondarySkill",
-        "rewardValue": "Wisdom",
+        "data": Object {
+          "rewardType": "SecondarySkill",
+          "rewardValue": "Wisdom",
+        },
+        "type": "Scholar",
       },
       "oaIndex": 2,
       "x": 5,
@@ -140,8 +149,11 @@ Object {
         ],
       },
       "body": Object {
-        "rewardType": "Spell",
-        "rewardValue": "Prayer",
+        "data": Object {
+          "rewardType": "Spell",
+          "rewardValue": "Prayer",
+        },
+        "type": "Scholar",
       },
       "oaIndex": 2,
       "x": 7,

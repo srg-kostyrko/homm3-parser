@@ -12,7 +12,7 @@ import {
   flag,
   skip,
 } from 'binary-markup'
-import { H3M_MAX_PLAYERS, Gender, genderEnum } from './constants'
+import { H3M_MAX_PLAYERS, genderEnum } from './constants'
 import {
   isRoE,
   isNotRoE,
@@ -22,35 +22,20 @@ import {
   artifacts,
   hero,
   hommString,
-  PrimarySkills,
-  Artifacts,
-  SecondarySkill,
 } from './common.bml'
-import { LoseCondition, loseConditionsEnum } from './constants/lose'
-import { LoseConditionData, loseConditionsBranches } from './additionalInfo/loseConditions.bml'
-import { WinCondition, winConditionsEnum } from './constants/win'
-import { winConditionsBranches, WinConditionData } from './additionalInfo/winConditions.bml'
-import { Hero } from './constants/hero'
-import { FlaggedProp } from '../../helpers/types'
-import { spellsMask, Spell } from './constants/spell'
-import { skillsMask, SecondarySkillType } from './constants/skill'
+import { loseConditionsEnum } from './enums/lose'
+import { loseConditionsBranches } from './additionalInfo/loseConditions.bml'
+import { winConditionsEnum } from './enums/win'
+import { winConditionsBranches } from './additionalInfo/winConditions.bml'
+import { spellsMask } from './enums/spell'
+import { skillsMask } from './enums/skill'
 
-export interface Rumor {
-  name: string
-  desciption: string
-}
 const rumor = struct(
   //
   hommString`name`,
   hommString`desciption`,
 )
 
-export interface CustomHero {
-  hero: Hero
-  face: number
-  name: string
-  allowed_players: number
-}
 const customHero = struct(
   //
   hero`hero`,
@@ -59,31 +44,11 @@ const customHero = struct(
   uint8`allowed_players`,
 )
 
-export interface SecondarySkills {
-  count: number
-  entries: SecondarySkill[]
-}
 const secondarySkills = struct(
   //
   uint32`count`,
   array(secondarySkill, ctx`count`)`entries`,
 )
-
-type WithExperience = FlaggedProp<'hasExperience', 'experience', number>
-type WithSecondarySkills = FlaggedProp<'hasSecondarySkills', 'secondarySkills', SecondarySkills>
-type WithArtifacts = FlaggedProp<'hasArtifacts', 'artifacts', Artifacts>
-type WithBiography = FlaggedProp<'hasBiography', 'biography', string>
-type WithSpells = FlaggedProp<'hasSpells', 'spells', number[]>
-type WithPrimarySkills = FlaggedProp<'hasPrimarySkills', 'primarySkills', PrimarySkills>
-
-export type HeroData = {
-  gender: Gender
-} & WithExperience &
-  WithSecondarySkills &
-  WithArtifacts &
-  WithBiography &
-  WithSpells &
-  WithPrimarySkills
 
 const heroData = struct(
   flag`hasExperience`,
@@ -101,32 +66,11 @@ const heroData = struct(
   when(ctx`hasPrimarySkills`, primarySkills)`primarySkills`,
 )
 
-export type HeroSettings = FlaggedProp<'hasSettings', 'settings', HeroData>
-
 const heroSettings = struct(
   //
   flag`hasSettings`,
   when(ctx`hasSettings`, heroData)`settings`,
 )
-
-export interface AdditionalInfo {
-  winCondition: WinCondition
-  winConditionData: WinConditionData
-  loseCondition: LoseCondition
-  loseConditionData: LoseConditionData
-  teamsCount: number
-  teams?: number[]
-  availableHeroes: number[]
-  customHeroesCount?: number
-  customHeroes: CustomHero[]
-  availableArtifacts: number[]
-  availableSpells: Spell[]
-  availableSkills: SecondarySkillType[]
-  rumorsCount: number
-  rumors: Rumor[]
-  heroSettings: HeroSettings[]
-}
-
 export const additionalInfo = struct(
   enums(uint8, winConditionsEnum)`winCondition`,
   branch(ctx`winCondition`, winConditionsBranches)`winConditionData`,

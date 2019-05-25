@@ -1,11 +1,9 @@
 import {
   uint8,
-  byte,
   uint16,
   uint32,
   array,
   struct,
-  bitMask,
   ctx,
   skip,
   enums,
@@ -14,25 +12,11 @@ import {
   bytes,
 } from 'binary-markup'
 import { hommString } from './common.bml'
-import { ObjectType, ObjectGroup, objectGroupEnum, objectTypeEnum } from './constants/object'
-import { MetaType } from './constants/meta'
-import { artifactEnum } from './constants/artifact'
+import { ObjectType, objectGroupEnum, objectTypeEnum } from './enums/object'
+import { artifactEnum } from './enums/artifact'
 import { getMetaType } from '../../helpers/objects'
-import { creatureEnum } from './constants/creature'
-import { alignmentEnum } from './constants/alignment'
-
-export interface ObjectAttribute {
-  header: string
-  passable: number[]
-  active: number[]
-  allowedLandscapes: number
-  landscapeGroup: number
-  objectType: ObjectType
-  objectSubType: number
-  metaType: MetaType
-  objectGroup: ObjectGroup
-  above: number
-}
+import { creatureEnum } from './enums/creature'
+import { alignmentEnum } from './enums/alignment'
 
 const objectSubType = branch(
   ctx`objectType`,
@@ -65,11 +49,6 @@ const entry = struct(
   uint8`above`,
   skip(16),
 )
-
-export interface ObjectAttributes {
-  count: number
-  entries: ObjectAttribute[]
-}
 
 export const objectAttributes = struct(
   //

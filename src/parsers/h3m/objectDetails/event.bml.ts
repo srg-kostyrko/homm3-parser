@@ -1,16 +1,11 @@
 import { struct, when, ctx, flag, bytes, skip } from 'binary-markup'
-import { WithGuardians, Contents, guardians, contents } from './common.bml'
-import { Player } from '../constants/player'
+
 import { bitMasksArray } from '../../../helpers/objects'
+import { guardians, contents } from './common.bml'
+import { Player } from '../contracts/enums/Player'
+import { MapEvent } from '../contracts/objects/Event'
 
-export type Event = WithGuardians & {
-  contents: Contents
-  appliesToPlayers: Player[]
-  appliesToComputer: boolean
-  cancelAfterVisit: boolean
-}
-
-export const event = struct<Event>(
+export const event = struct<MapEvent>(
   flag`hasGuardians`,
   when(ctx`hasGuardians`, guardians)`guardians`,
   contents`contents`,
