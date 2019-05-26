@@ -1,5 +1,5 @@
 import { parse, StreamInput, TagOrWrapper } from 'binary-markup'
-import { inflate } from 'pako'
+import pako from 'pako'
 import { h3mFile } from './parsers/h3m/h3m.bml'
 import { H3MFile } from './parsers/h3m/contracts'
 
@@ -11,7 +11,7 @@ export function parseH3M(data: StreamInput): H3MFile {
 }
 
 export function parseH3MFile(data: Uint8Array): H3MFile {
-  const content = inflate(data)
+  const content = pako.inflate(data)
   return parseH3M(content)
 }
 

@@ -1,0 +1,31 @@
+*.log
+*.tgz
+npm-debug.log*
+.DS_Store
+
+# Coverage directory used by tools like istanbul
+coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+
+# npm package lock
+package-lock.json
+yarn.lock
+
+# project files
+__tests__
+.rpt2_cache
+.travis.yml
+.editorconfig
+jest.config.js
+.prettierrc.js
+.gitignore
+.eslintrc
+.prettierrc
+rollup.config.js
+tslint.json
+.vscode
+tsconfig.json
+src/
