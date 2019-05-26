@@ -1,6 +1,6 @@
 {
   "name": "homm3-parsers",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Collection of binary parsers able to parse various file formats related to Heroes of Might and Magic III",
   "keywords": [
     "parser",
