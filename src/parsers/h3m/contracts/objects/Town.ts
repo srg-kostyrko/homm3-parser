@@ -23,6 +23,7 @@ export type TownEventABRoE = Omit<TownEvent, 'appliesToHuman'>
 export type BuildingsType =
   | {
       buildingsCustomized: false
+      hasFort: boolean
     }
   | {
       buildingsCustomized: true
@@ -30,14 +31,12 @@ export type BuildingsType =
         built: Building[]
         disables: Building[]
       }
-      hasFort: boolean
     }
 
 export type Town = {
   absodId: number
   owner: Player
   formation: Formation
-  buildingsCustomized: boolean
   mustHaveSpells: Spell[]
   mayHaveSpells: Spell[]
   eventCount: number
