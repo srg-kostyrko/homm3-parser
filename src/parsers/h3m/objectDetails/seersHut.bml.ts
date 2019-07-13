@@ -35,6 +35,6 @@ export const seersHut = struct(
   when(isRoE, artifact)`artifactType`,
   when(isNotRoE, quest)`quest`,
   enums(byte, questRewardEnum)`rewardType`,
-  branch<unknown>(ctx`rewardType`, rewardBranches)`reward`,
+  branch(ctx`rewardType`, rewardBranches)`reward`,
   skip(2),
 )

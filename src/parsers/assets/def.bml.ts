@@ -38,6 +38,7 @@ const linePointer = (context: Context): number => {
 
 interface Line {
   content: number[]
+  [key: string]: unknown
 }
 
 const repeatCondition = (context: Context, _el: unknown, _index: unknown, list: Line[]): boolean =>
@@ -50,9 +51,9 @@ const codeFragment = struct<Line>(
   branch(
     ctx`code`,
     {
-      0xff: bytes(context => context.get<number>('length') + 1),
+      0xff: bytes((context): number => context.get<number>('length') + 1),
     },
-    computed(context =>
+    computed((context): number[] =>
       new Array<number>(context.get<number>('length') + 1).fill(context.get<number>('code')),
     ),
   )`content`,
@@ -60,14 +61,16 @@ const codeFragment = struct<Line>(
 
 const segmentFragment = struct<Line>(
   byte`segment`,
-  computed(context => context.get<number>('segment') >> 5)`code`,
-  computed(context => (context.get<number>('segment') & 0x1f) + 1)`length`,
+  computed((context): number => context.get<number>('segment') >> 5)`code`,
+  computed((context): number => (context.get<number>('segment') & 0x1f) + 1)`length`,
   branch(
     ctx`code`,
     {
       7: bytes(ctx`length`),
     },
-    computed(context => new Array<number>(context.get('length')).fill(context.get<number>('code'))),
+    computed((context): number[] =>
+      new Array<number>(context.get('length')).fill(context.get<number>('code')),
+    ),
   )`content`,
 )
 
@@ -88,7 +91,7 @@ interface File {
   pixels: number[]
 }
 
-const file = struct<File>(
+const file = struct(
   uint32`size`,
   uint32`encoding`,
   uint32`fullWidth`,
@@ -99,7 +102,7 @@ const file = struct<File>(
   int32`top`,
 
   branch(ctx`encoding`, {
-    0: bytes(context => context.get<number>('width') * context.get<number>('height')),
+    0: bytes((context): number => context.get<number>('width') * context.get<number>('height')),
     1: struct(
       array(uint32, ctx`height`)`lineOffsets`,
       array(
@@ -118,11 +121,11 @@ const file = struct<File>(
     ),
     3: struct(
       array(
-        array(uint16, context => Math.ceil(context.get<number>('width') / 32)),
+        array(uint16, (context): number => Math.ceil(context.get<number>('width') / 32)),
         ctx`height`,
       )`lineOffsets`,
       array(
-        array(repeatWhile(segmentFragment, repeatCondition), context =>
+        array(repeatWhile(segmentFragment, repeatCondition), (context): number =>
           Math.ceil(context.get<number>('width') / 32),
         )`line`,
         ctx`height`,
@@ -131,12 +134,16 @@ const file = struct<File>(
   })`content`,
   branch(ctx`encoding`, {
     0: computed(ctx<number[]>`content`),
-    1: computed(context => context.get<Line[][]>('content.lines').reduce(lineReducer, [])),
-    2: computed(context => context.get<Line[][]>('content.lines').reduce(lineReducer, [])),
-    3: computed(context =>
+    1: computed((context): number[] =>
+      context.get<Line[][]>('content.lines').reduce(lineReducer, []),
+    ),
+    2: computed((context): number[] =>
+      context.get<Line[][]>('content.lines').reduce(lineReducer, []),
+    ),
+    3: computed((context): number[] =>
       context.get<Line[][][]>('content.lines').reduce(
         //
-        (acc: number[], line) =>
+        (acc: number[], line): number[] =>
           acc.concat(
             //
             line.reduce(lineReducer, []),
@@ -154,7 +161,7 @@ interface Block {
   files: File[]
 }
 
-const block = struct<Block>(
+const block = struct(
   uint32`block_id`,
   uint32`entriesCount`,
   uint32`unknown`,
@@ -172,7 +179,7 @@ export interface DefFile {
   blocks: Block[]
 }
 
-export const defFile = struct<DefFile>(
+export const defFile = struct(
   endian(Endian.LE),
   uint32`type`,
   uint32`width`,

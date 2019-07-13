@@ -17,6 +17,7 @@ import { artifactEnum } from './enums/artifact'
 import { getMetaType } from '../../helpers/objects'
 import { creatureEnum } from './enums/creature'
 import { alignmentEnum } from './enums/alignment'
+import { MetaType } from './contracts'
 
 const objectSubType = branch(
   ctx`objectType`,
@@ -40,10 +41,12 @@ const entry = struct(
   uint16`allowedLandscapes`,
   uint16`landscapeGroup`,
   enums(uint32, objectTypeEnum)`objectType`,
-  computed(context => {
-    const type = context.get<ObjectType>(`objectType`)
-    return getMetaType(type)
-  })`metaType`,
+  computed(
+    (context): MetaType => {
+      const type = context.get<ObjectType>(`objectType`)
+      return getMetaType(type)
+    },
+  )`metaType`,
   objectSubType`objectSubType`,
   enums(uint8, objectGroupEnum)`objectGroup`,
   uint8`above`,

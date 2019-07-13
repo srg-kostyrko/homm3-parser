@@ -106,5 +106,5 @@ const bodyMap = {
 
 export const objectBody = struct(
   computed(ctx`attributes.metaType`)`type`,
-  branch<unknown>(ctx`type`, bodyMap)`data`,
+  branch(ctx`type`, bodyMap)`data`,
 )

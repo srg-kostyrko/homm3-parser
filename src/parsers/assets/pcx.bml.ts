@@ -15,13 +15,14 @@ export interface PcxFile {
   bgr?: BGR[]
 }
 
-export const pcxFile = struct<PcxFile>(
+export const pcxFile = struct(
   endian(Endian.LE),
   uint32`size`,
   uint32`width`,
   uint32`height`,
   when(
-    context => context.get('size') === context.get<number>('width') * context.get<number>('height'),
+    (context): boolean =>
+      context.get('size') === context.get<number>('width') * context.get<number>('height'),
     struct(
       //
       bytes(ctx`size`)`pixels`,
@@ -30,7 +31,7 @@ export const pcxFile = struct<PcxFile>(
   )`with_palette`,
   when(
     //
-    context =>
+    (context): boolean =>
       context.get('size') === context.get<number>('width') * context.get<number>('height') * 3,
     greedyArray(bgr),
   )`bgr`,

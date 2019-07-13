@@ -15,8 +15,8 @@ export const bitMasksArray = <T>(
 ): TagProducer<T[]> =>
   createAdapter<number[], T[]>(
     tag,
-    (data: number[]) => {
-      return data.reduce((acc: T[], mask, index) => {
+    (data: number[]): T[] => {
+      return data.reduce((acc: T[], mask, index): T[] => {
         const bits = bitGroups[index]
         for (const [bit, skill] of bits) {
           if (mask & bit) {
@@ -26,8 +26,8 @@ export const bitMasksArray = <T>(
         return acc
       }, [])
     },
-    (skills: T[]) => {
-      return bitGroups.map(bits => {
+    (skills: T[]): number[] => {
+      return bitGroups.map((bits: [number, T][]): number => {
         let mask = 0
         for (const [bit, skill] of bits) {
           if (skills.includes(skill)) {

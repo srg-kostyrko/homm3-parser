@@ -34,7 +34,7 @@ const messages = struct(
 
 export const quest = struct(
   enums(byte, questEnum)`questType`,
-  branch<unknown>(ctx`questType`, questBranches)`objective`,
+  branch(ctx`questType`, questBranches)`objective`,
   when(ctx`questType`.neq(QuestType.NONE), int32)`deadline`,
   when(ctx`questType`.neq(QuestType.NONE), messages)`messages`,
 )

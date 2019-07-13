@@ -23,14 +23,6 @@ import { secondarySkillEnum, secondarySkillMasteryEnum } from './enums/skill'
 import { spellEnum } from './enums/spell'
 import { resourceEnum } from './enums/resource'
 import { playerEnum } from './enums/player'
-import {
-  PrimarySkills,
-  CreatureSlot,
-  WornArtifacts,
-  Backpack,
-  Artifacts,
-  SecondarySkillData,
-} from './contracts/common'
 
 export const isRoE = (context: Context): boolean => context.get('format') === MapFormat.ROE
 export const isSoD = (context: Context): boolean => context.get('format') === MapFormat.SOD
@@ -38,7 +30,7 @@ export const isNotRoE = (context: Context): boolean => context.get('format') !==
 
 export const hommString = pascalString(uint32)
 
-export const primarySkills = struct<PrimarySkills>(
+export const primarySkills = struct(
   uint8`attack`,
   uint8`defense`,
   uint8`spellPower`,
@@ -47,10 +39,7 @@ export const primarySkills = struct<PrimarySkills>(
 
 export const skill = enums(byte, secondarySkillEnum)
 
-export const secondarySkill = struct<SecondarySkillData>(
-  skill`type`,
-  enums(uint8, secondarySkillMasteryEnum)`level`,
-)
+export const secondarySkill = struct(skill`type`, enums(uint8, secondarySkillMasteryEnum)`level`)
 export const experience = uint32
 export const heroType = uint8
 export const artifactType = when(isRoE, uint8, uint16)
@@ -66,13 +55,13 @@ export const hero = enums(heroType, heroEnum)
 export const spell = enums(spellType, spellEnum)
 export const resource = enums(resourceType, resourceEnum)
 
-export const creatureSlot = struct<CreatureSlot>(creature`type`, uint16`quantity`)
+export const creatureSlot = struct(creature`type`, uint16`quantity`)
 
 export const army = array(creatureSlot, 7)
 
 export const resources = array(int32, 7)
 
-export const wornArtifacts = struct<WornArtifacts>(
+export const wornArtifacts = struct(
   artifact`headwear`,
   artifact`shoulders`,
   artifact`rightHand`,
@@ -94,12 +83,12 @@ export const wornArtifacts = struct<WornArtifacts>(
   artifact`misc5`,
 )
 
-export const backpack = struct<Backpack>(
+export const backpack = struct(
   //
   uint16`count`,
   array(artifact, ctx`count`)`artifacts`,
 )
 
-export const artifacts = struct<Artifacts>(wornArtifacts`worn`, backpack`backpack`)
+export const artifacts = struct(wornArtifacts`worn`, backpack`backpack`)
 
 export const owner = enums(byte, playerEnum)

@@ -7,7 +7,7 @@ import { ScholarRaward } from '../contracts/enums/ScholarReward'
 export const scholar = struct(
   //
   enums(int8, schoalrRewardEnum)`rewardType`,
-  branch<{}>(
+  branch(
     ctx`rewardType`,
     {
       [ScholarRaward.PrimarySkill]: enums(uint8, primarySkillEnum),

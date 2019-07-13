@@ -48,7 +48,8 @@ export const player = struct(
   when(ctx`hasMainTown`, mainTown)`mainTown`,
   startingHero`startingHero`,
   when(
-    context => isNotRoE(context) && context.get<StartingHero>('startingHero').hero !== Hero.NONE,
+    (context): boolean =>
+      isNotRoE(context) && context.get<StartingHero>('startingHero').hero !== Hero.NONE,
     additionalInfo,
   )`additionaInfo`,
 )

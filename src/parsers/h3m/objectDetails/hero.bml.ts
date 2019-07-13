@@ -25,7 +25,6 @@ import {
   primarySkills,
 } from '../common.bml'
 import { spellsMask, spellEnum } from '../enums/spell'
-import { Spell } from '../contracts/enums/Spell'
 
 export const heroData = struct(
   when(isNotRoE, uint32)`absodId`,
@@ -58,7 +57,7 @@ export const heroData = struct(
   )`biography`,
   when(isNotRoE, enums(uint8, genderEnum))`gender`,
   when(isSoD, flag)`hasSpells`,
-  branch<null | any | Spell[]>(ctx`format`, {
+  branch(ctx`format`, {
     [MapFormat.ROE]: pass,
     [MapFormat.AB]: enums(uint8, spellEnum), // In AB only a single spell can be specified here, 0xFE is default, 0xFF none
     [MapFormat.SOD]: when(ctx`hasSpells`, spellsMask, pass),

@@ -1,6 +1,5 @@
 import { struct, enums, byte, Context, TagProducer } from 'binary-markup'
 import { terrainsEnum, riversEnum, roadsEnum } from './enums/tiles'
-import { Tile } from './contracts/Tiles'
 import { Info } from './contracts/Info'
 
 // terrainY: 1,
@@ -19,7 +18,7 @@ const tilePart = <T extends string>(
     byte`sprite`,
   )
 
-export const tile = struct<Tile>(
+export const tile = struct(
   tilePart(terrainsEnum)`terrain`,
   tilePart(riversEnum)`river`,
   tilePart(roadsEnum)`road`,
