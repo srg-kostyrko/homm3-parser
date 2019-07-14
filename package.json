@@ -41,7 +41,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "binary-markup": "^0.8.5",
+    "binary-markup": "^0.8.6",
     "pako": "^1.0.10"
   },
   "devDependencies": {
