@@ -1,6 +1,7 @@
 import { Terrain } from './enums/Terrain'
 import { River } from './enums/River'
 import { Road } from './enums/Road'
+import { TileMirror } from './enums/TileMirror'
 
 export interface Tile {
   terrain: {
@@ -15,5 +16,5 @@ export interface Tile {
     type: Road
     sprite: number
   }
-  mirror: number
+  mirror: TileMirror[]
 }

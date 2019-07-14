@@ -1,13 +1,19 @@
-import { struct, enums, byte, Context, TagProducer } from 'binary-markup'
+import { struct, enums, byte, Context, TagProducer, bytes } from 'binary-markup'
 import { terrainsEnum, riversEnum, roadsEnum } from './enums/tiles'
 import { Info } from './contracts/Info'
+import { TileMirror } from './contracts/enums/TileMirror'
+import { bitMasksArray } from '../../helpers/objects'
 
-// terrainY: 1,
-// terrainX: 2,
-// riverY: 4,
-// riverX: 8,
-// roadY: 16,
-// roadX: 32,
+const mirrorBits: [number, TileMirror][][] = [
+  [
+    [1, TileMirror.TerrainVertical],
+    [2, TileMirror.TerrainHorizontal],
+    [4, TileMirror.RiverVertical],
+    [8, TileMirror.RiverHorizontal],
+    [16, TileMirror.RoadVertical],
+    [32, TileMirror.RoadHorizontal],
+  ],
+]
 
 const tilePart = <T extends string>(
   typeEnum: Record<T, number>,
@@ -22,7 +28,7 @@ export const tile = struct(
   tilePart(terrainsEnum)`terrain`,
   tilePart(riversEnum)`river`,
   tilePart(roadsEnum)`road`,
-  byte`mirror`,
+  bitMasksArray(bytes(1), mirrorBits)`mirror`,
 )
 
 export function calculateTiles(ctx: Context): number {
