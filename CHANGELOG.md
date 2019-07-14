@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.3](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.1...v0.8.3) (2019-07-14)
+
+
+### Bug Fixes
+
+* **assets:** Fix errors in assets parsers ([4a5546f](https://github.com/srg-kostyrko/homm3-parser/commit/4a5546f))
+* **types:** Fix town type description ([bfaccfc](https://github.com/srg-kostyrko/homm3-parser/commit/bfaccfc))
+
+
+### Features
+
+* Imrpove parsing of tile mirror bytes ([48453b0](https://github.com/srg-kostyrko/homm3-parser/commit/48453b0))
+
+
+
 ### [0.8.2](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.1...v0.8.2) (2019-07-14)
 
 
