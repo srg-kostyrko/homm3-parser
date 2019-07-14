@@ -27,7 +27,7 @@ const file = struct(
   pointer(ctx`offset`, when(ctx`compressed`, bytes(ctx`csize`), bytes(ctx`size`)))`content`,
 )
 
-interface LodFileEntry {
+export interface LodFileEntry {
   name: string
   size: number
   csize: number
