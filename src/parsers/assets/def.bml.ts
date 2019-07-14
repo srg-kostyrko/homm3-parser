@@ -31,7 +31,7 @@ const filePointer = (context: Context): number => {
 
 const linePointer = (context: Context): number => {
   const index = context.get<number>('index')
-  const offsets = context.get<number[]>('line_offsets')
+  const offsets = context.get<number[]>('lineOffsets')
   const offset = context.get<number>('offset')
   return offset + 32 + offsets[index]
 }
@@ -155,14 +155,14 @@ const file = struct(
 )
 
 interface Block {
-  block_id: number
+  blockId: number
   entriesCount: number
   filenames: string[]
   files: File[]
 }
 
 const block = struct(
-  uint32`block_id`,
+  uint32`blockId`,
   uint32`entriesCount`,
   uint32`unknown`,
   uint32`unknown`,
@@ -179,7 +179,7 @@ export interface DefFile {
   blocks: Block[]
 }
 
-export const defFile = struct(
+export const defFile = struct<DefFile>(
   endian(Endian.LE),
   uint32`type`,
   uint32`width`,

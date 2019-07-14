@@ -107,3 +107,4 @@ Project Link: [https://github.com/srg-kostyrko/homm3-parser](https://github.com/
 ## Acknowledgements
 
 - [homm3tools](https://github.com/potmdehex/homm3tools)
+- [https://github.com/josch/lodextract](https://github.com/josch/lodextract)

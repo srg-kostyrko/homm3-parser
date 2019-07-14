@@ -18,7 +18,7 @@ import {
 const file = struct(
   //
   cString()`name`,
-  skip((context): number => 16 - context.get<string>('name').length + 1),
+  skip((context): number => 16 - (context.get<string>('name').length + 1)),
   uint32`offset`,
   uint32`size`,
   uint32,
@@ -40,7 +40,7 @@ export interface LodFile {
   entries: LodFileEntry[]
 }
 
-export const lodFile = struct(
+export const lodFile = struct<LodFile>(
   //
   endian(Endian.LE),
   constant(cString(), 'LOD'),
