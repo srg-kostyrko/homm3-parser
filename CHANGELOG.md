@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.4](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.3...v0.8.4) (2019-07-15)
+
+
+### Bug Fixes
+
+* Add missing export ([0a9334f](https://github.com/srg-kostyrko/homm3-parser/commit/0a9334f))
+
+
+
 ### [0.8.3](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.1...v0.8.3) (2019-07-14)
 
 
