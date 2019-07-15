@@ -16,7 +16,7 @@
     "email": "srg.kostyrko@gmail.com"
   },
   "main": "dist/homm3-parsers.js",
-  "module": "dist/homm3-parsers.es5.js",
+  "module": "dist/homm3-parsers.esm.js",
   "unpkg": "dist/homm3-parsers.bundle.js",
   "typings": "dist/types/index.d.ts",
   "scripts": {
