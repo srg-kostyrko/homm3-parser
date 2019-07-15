@@ -17,7 +17,7 @@
   },
   "main": "dist/homm3-parsers.js",
   "module": "dist/homm3-parsers.es5.js",
-  "browser": "dist/homm3-parsers.bundle.js",
+  "unpkg": "dist/homm3-parsers.bundle.js",
   "typings": "dist/types/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist",
