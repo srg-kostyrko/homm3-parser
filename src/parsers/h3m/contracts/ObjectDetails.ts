@@ -6,7 +6,7 @@ export interface MapObject {
   y: number
   z: number
   oaIndex: number
-  attribute: ObjectAttribute
+  attributes: ObjectAttribute
   body: MapObjectBody
 }
 
@@ -15,7 +15,7 @@ export interface MapObjectAB {
   y: number
   z: number
   oaIndex: number
-  attribute: ObjectAttribute
+  attributes: ObjectAttribute
   body: MapObjectBodyAB
 }
 
@@ -24,7 +24,7 @@ export interface MapObjectRoE {
   y: number
   z: number
   oaIndex: number
-  attribute: ObjectAttribute
+  attributes: ObjectAttribute
   body: MapObjectBodyRoE
 }
 
