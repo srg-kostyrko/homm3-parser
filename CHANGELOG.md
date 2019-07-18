@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.8](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.7...v0.8.8) (2019-07-18)
+
+
+### Bug Fixes
+
+* Fix error in ObjectDetails type ([21567ad](https://github.com/srg-kostyrko/homm3-parser/commit/21567ad))
+
+
+
 ### [0.8.7](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.6...v0.8.7) (2019-07-15)
 
 
