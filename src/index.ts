@@ -6,6 +6,7 @@ import { H3MFile } from './parsers/h3m/contracts'
 export * from './parsers/assets'
 export * from './parsers/h3m/contracts'
 export * from './parsers/h3m/constants'
+export * from './parsers/h3m/enums'
 
 export function parseH3M(data: StreamInput): H3MFile {
   return parse<H3MFile>(h3mFile, data)

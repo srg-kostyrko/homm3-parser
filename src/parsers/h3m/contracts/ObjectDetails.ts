@@ -1,6 +1,7 @@
 import { ObjectAttribute } from './ObjectAttributes'
 import { MapObjectBodyAB, MapObjectBodyRoE, MapObjectBody } from './objects/Body'
 
+export * from './objects/Body'
 export interface MapObject {
   x: number
   y: number
