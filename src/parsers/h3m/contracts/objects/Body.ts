@@ -14,6 +14,16 @@ import { MetaType } from '../enums/MetaType'
 import { MapEvent } from './Event'
 import { HeroPlaceholder, HeroData, HeroDataAB, HeroDataRoE } from './Hero'
 
+export * from './Creature'
+export * from './Event'
+export * from './Hero'
+export * from './Quest'
+export * from './RandomDwelling'
+export * from './Scholar'
+export * from './SeersHut'
+export * from './Town'
+export * from './common'
+
 export interface MessageBearer {
   message: string
 }
