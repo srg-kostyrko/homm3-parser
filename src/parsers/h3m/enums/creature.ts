@@ -88,7 +88,7 @@ export const creatureEnum = {
   [Creature.BlackDragon]: 83,
   [Creature.Goblin]: 84,
   [Creature.Hobgoblin]: 85,
-  [Creature.WolfRrider]: 86,
+  [Creature.WolfRider]: 86,
   [Creature.WolfRaider]: 87,
   [Creature.Orc]: 88,
   [Creature.OrcChieftain]: 89,

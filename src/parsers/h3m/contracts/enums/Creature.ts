@@ -86,7 +86,7 @@ export enum Creature {
   BlackDragon = 'BlackDragon',
   Goblin = 'Goblin',
   Hobgoblin = 'Hobgoblin',
-  WolfRrider = 'WolfRrider',
+  WolfRider = 'WolfRider',
   WolfRaider = 'WolfRaider',
   Orc = 'Orc',
   OrcChieftain = 'OrcChieftain',
