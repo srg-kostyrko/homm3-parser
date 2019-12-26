@@ -9,4 +9,5 @@ export enum Alignment {
   Stronghold = 'Stronghold',
   Fortress = 'Fortress',
   Conflux = 'Conflux',
+  Neutral = 'Neutral'
 }
