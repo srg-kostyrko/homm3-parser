@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.11](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.10...v0.8.11) (2019-12-26)
+
+
+### Features
+
+* Add neutral alignment ([d0be8a4](https://github.com/srg-kostyrko/homm3-parser/commit/d0be8a473c369942a11745b83f81cb81c11945d4))
+
+
+### Bug Fixes
+
+* Fix typo in creature name ([39a2121](https://github.com/srg-kostyrko/homm3-parser/commit/39a212115de33d1225444090353e3ba3c0af93f7))
+* Fix typos ([10fcde1](https://github.com/srg-kostyrko/homm3-parser/commit/10fcde1f1c7de2fe0c13119c7a9b6149ca4e0d76))
+
 ### [0.8.10](https://github.com/srg-kostyrko/homm3-parser/compare/v0.8.9...v0.8.10) (2019-07-21)
 
 
