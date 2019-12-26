@@ -71,7 +71,7 @@ export enum Spell {
   AirElemental = 'AirElemental',
   Stone = 'Stone',
   Poison = 'Poison',
-  Pind = 'Pind',
+  Bind = 'Bind',
   Disease = 'Disease',
   Paralyze = 'Paralyze',
   Aging = 'Aging',

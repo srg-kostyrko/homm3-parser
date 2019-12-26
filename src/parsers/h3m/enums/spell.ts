@@ -76,7 +76,7 @@ export const spellEnum = {
   // these abilities are used in combat creature structures
   [Spell.Stone]: 0x46,
   [Spell.Poison]: 0x47,
-  [Spell.Pind]: 0x48,
+  [Spell.Bind]: 0x48,
   [Spell.Disease]: 0x49,
   [Spell.Paralyze]: 0x4a,
   [Spell.Aging]: 0x4b,
