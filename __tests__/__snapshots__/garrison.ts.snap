@@ -872,7 +872,7 @@ Object {
             },
             Object {
               "quantity": 1,
-              "type": "WolfRrider",
+              "type": "WolfRider",
             },
             Object {
               "quantity": 1,
@@ -945,11 +945,11 @@ Object {
             },
             Object {
               "quantity": 1,
-              "type": "Cyclops",
+              "type": "Cyclop",
             },
             Object {
               "quantity": 1,
-              "type": "CyclopsKing",
+              "type": "CyclopKing",
             },
             Object {
               "quantity": 1,

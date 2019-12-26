@@ -3804,7 +3804,7 @@ Object {
         "landscapeGroup": 1,
         "metaType": "Creature",
         "objectGroup": "Creatures",
-        "objectSubType": "WolfRrider",
+        "objectSubType": "WolfRider",
         "objectType": "Creature",
         "passable": Array [
           255,
@@ -4156,7 +4156,7 @@ Object {
         "landscapeGroup": 1,
         "metaType": "Creature",
         "objectGroup": "Creatures",
-        "objectSubType": "Cyclops",
+        "objectSubType": "Cyclop",
         "objectType": "Creature",
         "passable": Array [
           255,
@@ -4200,7 +4200,7 @@ Object {
         "landscapeGroup": 1,
         "metaType": "Creature",
         "objectGroup": "Creatures",
-        "objectSubType": "CyclopsKing",
+        "objectSubType": "CyclopKing",
         "objectType": "Creature",
         "passable": Array [
           255,
