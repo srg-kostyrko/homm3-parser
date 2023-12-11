@@ -33,7 +33,7 @@ import { skillsMask } from './enums/skill'
 const rumor = struct(
   //
   hommString`name`,
-  hommString`desciption`,
+  hommString`description`,
 )
 
 const customHero = struct(
@@ -86,7 +86,7 @@ export const additionalInfo = struct(
   when(isNotRoE, bytes((context): number => (isSoD(context) ? 18 : 17)))`availableArtifacts`,
   when(isSoD, spellsMask)`availableSpells`,
   when(isSoD, skillsMask)`availableSkills`,
-  uint32`rumorsRount`,
-  array(rumor, ctx`rumorsRount`)`rumors`,
+  uint32`rumorsCount`,
+  array(rumor, ctx`rumorsCount`)`rumors`,
   when(isSoD, array(heroSettings, 156))`heroSettings`,
 )

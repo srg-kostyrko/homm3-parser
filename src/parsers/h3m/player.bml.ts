@@ -51,5 +51,5 @@ export const player = struct(
     (context): boolean =>
       isNotRoE(context) && context.get<StartingHero>('startingHero').hero !== Hero.NONE,
     additionalInfo,
-  )`additionaInfo`,
+  )`additionalInfo`,
 )

@@ -9,7 +9,7 @@ import { LoseConditionData } from './additionalInfo/LoseCondition'
 
 export interface Rumor {
   name: string
-  desciption: string
+  description: string
 }
 
 export interface CustomHero {

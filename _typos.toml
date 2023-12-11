@@ -1,0 +1,14 @@
+[files]
+extend-exclude = ["src/parsers/assets/load.bml.ts"]
+
+[default.extend-identifiers]
+lod = "lod"
+AVWrog = "AVWrog"
+AVSring0 = "AVSring0"
+
+[default.extend-words]
+lod = "lod"
+Malcom = "Malcom"
+Thant = "Thant"
+AVWrog = "AVWrog"
+AVSring0 = "AVSring0"

@@ -74,7 +74,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* Imrpove parsing of tile mirror bytes ([48453b0](https://github.com/srg-kostyrko/homm3-parser/commit/48453b0))
+* Improve parsing of tile mirror bytes ([48453b0](https://github.com/srg-kostyrko/homm3-parser/commit/48453b0))
 
 
 
@@ -88,7 +88,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* Imrpove parsing of tile mirror bytes ([48453b0](https://github.com/srg-kostyrko/homm3-parser/commit/48453b0))
+* Improve parsing of tile mirror bytes ([48453b0](https://github.com/srg-kostyrko/homm3-parser/commit/48453b0))
 
 
 
