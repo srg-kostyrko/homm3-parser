@@ -2402,7 +2402,7 @@ Object {
           "guardians": Object {
             "creatures": null,
             "hasCreatures": false,
-            "message": "stateman medal",
+            "message": "statesman medal",
           },
           "hasGuardians": true,
         },
@@ -3090,7 +3090,7 @@ Object {
           "guardians": Object {
             "creatures": null,
             "hasCreatures": false,
-            "message": "sprit opression",
+            "message": "Spirit of Oppression",
           },
           "hasGuardians": true,
         },

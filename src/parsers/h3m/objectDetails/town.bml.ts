@@ -68,8 +68,8 @@ const townEvent = struct(
   flag`appliesToPlayers`,
   when(isSoD, flag)`appliesToHuman`,
   flag`appliesToComputer`,
-  uint16`firstOccurence`,
-  byte`subsequentOccurences`,
+  uint16`firstOccurrence`,
+  byte`subsequentOccurrences`,
   skip(17),
   buildingsAdapter`buildings`,
   array(uint16, 7)`creatureQuantities`, // 1 for each generator

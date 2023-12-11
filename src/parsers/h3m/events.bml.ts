@@ -8,8 +8,8 @@ const event = struct(
   flag`appliesToPlayers`,
   when(isSoD, flag)`appliesToHuman`,
   flag`appliesToComputer`,
-  uint16`firstOccurence`,
-  uint8`subsequentOccurences`,
+  uint16`firstOccurrence`,
+  uint8`subsequentOccurrences`,
   skip(17),
 )
 

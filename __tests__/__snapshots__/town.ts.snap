@@ -17,7 +17,7 @@ Array [
         6,
         7,
       ],
-      "firstOccurence": 9,
+      "firstOccurrence": 9,
       "message": "",
       "name": "give",
       "resources": Array [
@@ -29,7 +29,7 @@ Array [
         6,
         7,
       ],
-      "subsequentOccurences": 14,
+      "subsequentOccurrences": 14,
     },
     Object {
       "appliesToComputer": true,
@@ -45,7 +45,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 14,
+      "firstOccurrence": 14,
       "message": "",
       "name": "take",
       "resources": Array [
@@ -57,7 +57,7 @@ Array [
         -2,
         -1,
       ],
-      "subsequentOccurences": 7,
+      "subsequentOccurrences": 7,
     },
   ],
   Array [
@@ -77,7 +77,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 0,
+      "firstOccurrence": 0,
       "message": "",
       "name": "build town hall",
       "resources": Array [
@@ -89,7 +89,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -108,7 +108,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 1,
+      "firstOccurrence": 1,
       "message": "",
       "name": "build city hall",
       "resources": Array [
@@ -120,7 +120,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -140,7 +140,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 2,
+      "firstOccurrence": 2,
       "message": "",
       "name": "build capitol",
       "resources": Array [
@@ -152,7 +152,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -170,7 +170,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 3,
+      "firstOccurrence": 3,
       "message": "",
       "name": "build fort",
       "resources": Array [
@@ -182,7 +182,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": true,
@@ -201,7 +201,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 4,
+      "firstOccurrence": 4,
       "message": "",
       "name": "build citadel",
       "resources": Array [
@@ -213,7 +213,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -233,7 +233,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 5,
+      "firstOccurrence": 5,
       "message": "",
       "name": "build castle",
       "resources": Array [
@@ -245,7 +245,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -263,7 +263,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 6,
+      "firstOccurrence": 6,
       "message": "",
       "name": "build tavern",
       "resources": Array [
@@ -275,7 +275,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -293,7 +293,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 7,
+      "firstOccurrence": 7,
       "message": "",
       "name": "build blacksmith",
       "resources": Array [
@@ -305,7 +305,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -323,7 +323,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 8,
+      "firstOccurrence": 8,
       "message": "",
       "name": "build marketplace",
       "resources": Array [
@@ -335,7 +335,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -354,7 +354,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 9,
+      "firstOccurrence": 9,
       "message": "",
       "name": "build risource silo",
       "resources": Array [
@@ -366,7 +366,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -385,7 +385,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 10,
+      "firstOccurrence": 10,
       "message": "",
       "name": "build artifacts merchants",
       "resources": Array [
@@ -397,7 +397,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -415,7 +415,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 11,
+      "firstOccurrence": 11,
       "message": "",
       "name": "build mage guild 1",
       "resources": Array [
@@ -427,7 +427,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -446,7 +446,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 12,
+      "firstOccurrence": 12,
       "message": "",
       "name": "build mage guild 2",
       "resources": Array [
@@ -458,7 +458,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -478,7 +478,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 13,
+      "firstOccurrence": 13,
       "message": "",
       "name": "build mage guild 3",
       "resources": Array [
@@ -490,7 +490,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -511,7 +511,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 14,
+      "firstOccurrence": 14,
       "message": "",
       "name": "build mage guild 4",
       "resources": Array [
@@ -523,7 +523,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -545,7 +545,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 15,
+      "firstOccurrence": 15,
       "message": "",
       "name": "build mage guild 5",
       "resources": Array [
@@ -557,7 +557,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -575,7 +575,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 16,
+      "firstOccurrence": 16,
       "message": "",
       "name": "build shipyard",
       "resources": Array [
@@ -587,7 +587,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -605,7 +605,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 17,
+      "firstOccurrence": 17,
       "message": "",
       "name": "build grail",
       "resources": Array [
@@ -617,7 +617,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -635,7 +635,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 18,
+      "firstOccurrence": 18,
       "message": "",
       "name": "build creature 1",
       "resources": Array [
@@ -647,7 +647,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -666,7 +666,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 19,
+      "firstOccurrence": 19,
       "message": "",
       "name": "build creature 1 up",
       "resources": Array [
@@ -678,7 +678,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -697,7 +697,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 20,
+      "firstOccurrence": 20,
       "message": "",
       "name": "build creature 1 horde",
       "resources": Array [
@@ -709,7 +709,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -727,7 +727,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 21,
+      "firstOccurrence": 21,
       "message": "",
       "name": "build creature 2",
       "resources": Array [
@@ -739,7 +739,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -758,7 +758,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 22,
+      "firstOccurrence": 22,
       "message": "",
       "name": "build creature 2 up",
       "resources": Array [
@@ -770,7 +770,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -789,7 +789,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 23,
+      "firstOccurrence": 23,
       "message": "",
       "name": "build creature 2 horde",
       "resources": Array [
@@ -801,7 +801,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -819,7 +819,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 24,
+      "firstOccurrence": 24,
       "message": "",
       "name": "build creature 3",
       "resources": Array [
@@ -831,7 +831,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -850,7 +850,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 25,
+      "firstOccurrence": 25,
       "message": "",
       "name": "build creature 3 up",
       "resources": Array [
@@ -862,7 +862,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -881,7 +881,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 26,
+      "firstOccurrence": 26,
       "message": "",
       "name": "build creature 3 horde",
       "resources": Array [
@@ -893,7 +893,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -911,7 +911,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 27,
+      "firstOccurrence": 27,
       "message": "",
       "name": "build creature 4",
       "resources": Array [
@@ -923,7 +923,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -942,7 +942,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 28,
+      "firstOccurrence": 28,
       "message": "",
       "name": "build creature 4 up",
       "resources": Array [
@@ -954,7 +954,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -973,7 +973,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 29,
+      "firstOccurrence": 29,
       "message": "",
       "name": "build creature 4 horde",
       "resources": Array [
@@ -985,7 +985,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1003,7 +1003,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 30,
+      "firstOccurrence": 30,
       "message": "",
       "name": "build creature 5",
       "resources": Array [
@@ -1015,7 +1015,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1034,7 +1034,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 31,
+      "firstOccurrence": 31,
       "message": "",
       "name": "build creature 5 up",
       "resources": Array [
@@ -1046,7 +1046,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1065,7 +1065,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 31,
+      "firstOccurrence": 31,
       "message": "",
       "name": "build creature 5 horde",
       "resources": Array [
@@ -1077,7 +1077,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1095,7 +1095,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 32,
+      "firstOccurrence": 32,
       "message": "",
       "name": "build creature 6",
       "resources": Array [
@@ -1107,7 +1107,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1126,7 +1126,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 33,
+      "firstOccurrence": 33,
       "message": "",
       "name": "build creature 6 up",
       "resources": Array [
@@ -1138,7 +1138,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1156,7 +1156,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 34,
+      "firstOccurrence": 34,
       "message": "",
       "name": "build creature 7",
       "resources": Array [
@@ -1168,7 +1168,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
     Object {
       "appliesToComputer": false,
@@ -1187,7 +1187,7 @@ Array [
         0,
         0,
       ],
-      "firstOccurence": 35,
+      "firstOccurrence": 35,
       "message": "",
       "name": "build creature 7 up",
       "resources": Array [
@@ -1199,7 +1199,7 @@ Array [
         0,
         0,
       ],
-      "subsequentOccurences": 0,
+      "subsequentOccurrences": 0,
     },
   ],
 ]
@@ -1232,7 +1232,7 @@ Array [
     ],
   },
   Object {
-    "name": "dispell",
+    "name": "dispel",
     "spells": Array [
       "Dispel",
     ],
@@ -1292,7 +1292,7 @@ Array [
     ],
   },
   Object {
-    "name": "view earch",
+    "name": "view earth",
     "spells": Array [
       "ViewEarth",
     ],
@@ -1483,7 +1483,7 @@ Array [
 exports[`town should parse spells 4 - 5 1`] = `
 Array [
   Object {
-    "name": "armagedon",
+    "name": "armageddon",
     "spells": Array [
       "Armageddon",
     ],
@@ -1543,7 +1543,7 @@ Array [
     ],
   },
   Object {
-    "name": "ressurection",
+    "name": "resurrection",
     "spells": Array [
       "Resurrection",
     ],

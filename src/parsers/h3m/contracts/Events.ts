@@ -8,8 +8,8 @@ export interface Event {
   appliesToPlayers: boolean
   appliesToHuman: boolean
   appliesToComputer: boolean
-  firstOccurence: number
-  subsequentOccurences: number
+  firstOccurrence: number
+  subsequentOccurrences: number
 }
 
 export type EventABARoE = Omit<Event, 'appliesToHuman'>

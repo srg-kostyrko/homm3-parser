@@ -14,7 +14,7 @@ export type StartingHero =
       hero: Hero
       face: number
       name: string
-      additionaInfo: {
+      additionalInfo: {
         heroesCount: number
         heroes: {
           hero: Hero

@@ -3,7 +3,7 @@ import { artifact, creature, resource } from '../common.bml'
 import { hallLevelEnum, castleLevelEnum } from '../constants'
 import { WinCondition } from '../contracts/enums/WinCondition'
 
-const aquireArtifact = struct(
+const acquireArtifact = struct(
   //
   flag`allowNormalWin`,
   flag`appliesToComputer`,
@@ -58,7 +58,7 @@ const transportArtifact = struct(
 )
 
 export const winConditionsBranches = {
-  [WinCondition.AcquireArtifact]: aquireArtifact,
+  [WinCondition.AcquireArtifact]: acquireArtifact,
   [WinCondition.AccumulateCreatures]: accumulateCreatures,
   [WinCondition.AccumulateResources]: accumulateResources,
   [WinCondition.UpgradeTown]: upgradeTown,

@@ -12,8 +12,8 @@ export interface TownEvent {
   appliesToPlayers: boolean
   appliesToHuman: boolean
   appliesToComputer: boolean
-  firstOccurence: number
-  subsequentOccurences: number
+  firstOccurrence: number
+  subsequentOccurrences: number
   buildings: Building[]
   creatureQuantities: number[]
 }

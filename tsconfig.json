@@ -16,5 +16,7 @@
     "typeRoots": ["node_modules/@types"],
     "isolatedModules": false
   },
-  "include": ["src"]
+  "include": [
+    "src", "__tests__"
+  ],
 }

@@ -9,7 +9,7 @@ interface WinConditionBase {
   appliesToComputer: boolean
 }
 
-interface AquireArtifact extends WinConditionBase {
+interface AcquireArtifact extends WinConditionBase {
   type: Artifact
 }
 
@@ -49,7 +49,7 @@ interface WinConditionVariant<T extends WinCondition, V> {
 }
 
 export type WinConditionData =
-  | WinConditionVariant<WinCondition.AcquireArtifact, AquireArtifact>
+  | WinConditionVariant<WinCondition.AcquireArtifact, AcquireArtifact>
   | WinConditionVariant<WinCondition.AccumulateCreatures, AccumulateCreatures>
   | WinConditionVariant<WinCondition.AccumulateResources, AccumulateResources>
   | WinConditionVariant<WinCondition.UpgradeTown, UpgradeTown>
